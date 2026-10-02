@@ -8,347 +8,271 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>اقرأ وانطلق 🚀 | الصف ٤/٤</title>
+<title>اقرأ وانطلق | الصف ٤/٤</title>
 
 <style>
 
-*{
-
-  box-sizing:border-box;
-
-}
+*{box-sizing:border-box}
 
 body{
 
-  margin:0;
+margin:0;
 
-  font-family:Tahoma, Arial, sans-serif;
+font-family:Tahoma,Arial,sans-serif;
 
-  background:linear-gradient(135deg,#f7f2ff,#fff8e8,#eefcff);
+background:linear-gradient(135deg,#fff8e8,#eefcff,#f6efff);
 
-  color:#382d52;
-
-  min-height:100vh;
+color:#38304f;
 
 }
 
 header{
 
-  text-align:center;
+text-align:center;
 
-  padding:25px 15px;
+padding:25px 15px;
 
-  background:linear-gradient(135deg,#7656b8,#a778d0);
+background:linear-gradient(135deg,#7358c9,#55aee8);
 
-  color:white;
+color:white;
 
-  border-radius:0 0 35px 35px;
-
-  box-shadow:0 5px 18px rgba(0,0,0,.12);
+border-radius:0 0 35px 35px;
 
 }
 
 .logo{
 
-  width:125px;
+width:120px;
 
-  height:125px;
+height:120px;
 
-  object-fit:contain;
+object-fit:cover;
 
-  background:white;
+border-radius:50%;
 
-  border-radius:50%;
+border:5px solid white;
 
-  padding:8px;
+background:white;
 
-  margin-bottom:8px;
+box-shadow:0 5px 15px #0003;
 
 }
 
 h1{
 
-  margin:5px 0;
+font-size:31px;
 
-  font-size:30px;
+margin:10px 0 5px;
 
 }
 
 .subtitle{
 
-  font-size:18px;
+font-size:18px;
 
-  margin:6px 0 15px;
-
-}
-
-.school-info{
-
-  background:rgba(255,255,255,.17);
-
-  max-width:600px;
-
-  margin:auto;
-
-  padding:13px;
-
-  border-radius:18px;
-
-  line-height:2;
+margin-bottom:15px;
 
 }
 
-.teacher{
+.names{
 
-  font-weight:bold;
+max-width:600px;
 
-  color:#fff6b7;
+margin:auto;
+
+background:rgba(255,255,255,.18);
+
+padding:13px;
+
+border-radius:20px;
+
+line-height:2;
+
+}
+
+.owner{
+
+font-weight:bold;
+
+color:#fff3a6;
 
 }
 
 .container{
 
-  max-width:900px;
+max-width:950px;
 
-  margin:auto;
+margin:auto;
 
-  padding:20px;
+padding:20px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:24px;
+
+padding:20px;
+
+margin:18px 0;
+
+box-shadow:0 5px 15px #0001;
 
 }
 
-.welcome{
-
-  background:white;
-
-  padding:20px;
-
-  border-radius:25px;
-
-  text-align:center;
-
-  box-shadow:0 4px 15px rgba(0,0,0,.08);
-
-  margin-bottom:20px;
-
-}
+.center{text-align:center}
 
 select{
 
-  width:100%;
+width:100%;
 
-  max-width:430px;
+padding:14px;
 
-  padding:14px;
+font-size:17px;
 
-  font-size:17px;
+border-radius:15px;
 
-  border:2px solid #c8b6e8;
+border:2px solid #d9cef4;
 
-  border-radius:15px;
-
-  background:white;
-
-  margin:10px 0;
+background:white;
 
 }
 
 .stats{
 
-  display:grid;
+display:grid;
 
-  grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(3,1fr);
 
-  gap:10px;
+gap:10px;
 
-  margin-top:15px;
+margin-top:15px;
 
 }
 
 .stat{
 
-  background:#f7f2ff;
+background:#f7f3ff;
 
-  border-radius:16px;
+padding:13px 5px;
 
-  padding:12px 5px;
+border-radius:16px;
+
+text-align:center;
 
 }
 
 .number{
 
-  display:block;
+display:block;
 
-  font-size:24px;
+font-size:26px;
 
-  font-weight:bold;
+font-weight:bold;
 
-  color:#7656b8;
-
-}
-
-.section-title{
-
-  text-align:center;
-
-  margin:28px 0 15px;
-
-  color:#68499c;
+color:#7254bf;
 
 }
 
-.library{
+.stories{
 
-  display:grid;
+display:grid;
 
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-  gap:15px;
+gap:15px;
 
 }
 
 .story{
 
-  background:white;
+background:linear-gradient(135deg,#fff7d9,#eefcff);
 
-  border-radius:22px;
+padding:18px;
 
-  padding:20px;
+border-radius:20px;
 
-  box-shadow:0 4px 15px rgba(0,0,0,.08);
-
-  text-align:center;
-
-  border-top:6px solid #d6c1f0;
+text-align:center;
 
 }
 
-.story-icon{
+.icon{font-size:48px}
 
-  font-size:45px;
+.storyText{
 
-}
+display:none;
 
-.story h3{
+background:white;
 
-  color:#68499c;
+padding:15px;
 
-}
+margin-top:12px;
 
-.story p{
+border-radius:15px;
 
-  line-height:1.9;
+text-align:right;
 
-  color:#625b6e;
+line-height:2;
 
 }
 
 button{
 
-  border:0;
+border:0;
 
-  border-radius:15px;
+border-radius:14px;
 
-  padding:12px 20px;
+padding:12px 16px;
 
-  font-size:16px;
+font-size:16px;
 
-  font-weight:bold;
+font-weight:bold;
 
-  cursor:pointer;
+background:#7254bf;
 
-}
+color:white;
 
-.read-btn{
+cursor:pointer;
 
-  background:#7656b8;
-
-  color:white;
-
-  width:100%;
+margin:5px;
 
 }
 
-.read-btn:hover{
+.correct{background:#42a76c}
 
-  background:#60449b;
+.teacherBox{
 
-}
+background:#fff8dc;
 
-.teacher-panel{
-
-  margin-top:30px;
-
-  background:#fff9e9;
-
-  border:2px dashed #e4b954;
-
-  border-radius:22px;
-
-  padding:20px;
-
-  text-align:center;
-
-}
-
-.teacher-btn{
-
-  background:#f1c85b;
-
-  color:#473a1f;
-
-}
-
-#message{
-
-  margin-top:15px;
-
-  font-weight:bold;
-
-  color:#6b4ba0;
-
-  min-height:25px;
+border:2px dashed #e4bd52;
 
 }
 
 footer{
 
-  text-align:center;
+text-align:center;
 
-  padding:25px 10px;
+background:#4e4071;
 
-  margin-top:30px;
+color:white;
 
-  background:#4d3a70;
+padding:25px 15px;
 
-  color:white;
+line-height:2;
 
-  line-height:1.9;
-
-}
-
-.badge{
-
-  display:inline-block;
-
-  background:#fff0a8;
-
-  color:#5c4714;
-
-  padding:5px 12px;
-
-  border-radius:20px;
-
-  margin:5px;
+margin-top:25px;
 
 }
 
 @media(max-width:600px){
 
-  h1{font-size:25px;}
+h1{font-size:27px}
 
-  .stats{grid-template-columns:1fr;}
+.stats{grid-template-columns:1fr 1fr 1fr}
 
-  .logo{width:105px;height:105px;}
+.logo{width:105px;height:105px}
 
 }
 
@@ -360,37 +284,27 @@ footer{
 
 <header>
 
-<img
+<img src="IMG_5326.png" class="logo" alt="شعار المدرسة">
 
-  src="school-logo.png"
-
-  alt="شعار المدرسة"
-
-  class="logo"
-
-  onerror="this.style.display='none'"
-
->
-
-<h1>📚 منصة اقرأ وانطلق 🚀</h1>
+<h1>📚 اقرأ وانطلق 🚀</h1>
 
 <div class="subtitle">
 
-  منصة القراءة التفاعلية لطلبة الصف ٤/٤
+منصة القراءة التفاعلية لطلبة الصف ٤/٤
 
 </div>
 
-<div class="school-info">
+<div class="names">
 
-  <div>🌷 مديرة المدرسة: <strong>أ. ابتسام البلوشي</strong></div>
+<div>👑 مديرة المدرسة: <strong>أ. ابتسام البلوشي</strong></div>
 
-  <div>🌷 المعلمة الأولى: <strong>ميمونة البلوشي</strong></div>
+<div>⭐ المعلمة الأولى: <strong>ميمونة البلوشي</strong></div>
 
-  <div class="teacher">
+<div class="owner">
 
-    ✨ إعداد وإشراف الأستاذة: محفوظة السعدي ✨
+🌷 إعداد وإشراف الأستاذة: محفوظة السعدي
 
-  </div>
+</div>
 
 </div>
 
@@ -398,29 +312,29 @@ footer{
 
 <div class="container">
 
-<section class="welcome">
+<div class="card center">
 
-<h2>🌟 أهلًا بقارئنا المبدع 🌟</h2>
+<h2>🌟 أهلًا ببطل القراءة 🌟</h2>
 
 <p>
 
-اختر اسمك، واقرأ النصوص، واجمع النجوم والنقاط حتى تصبح من أبطال القراءة.
+اختر اسمك، واقرأ النصوص، وأجب عن الأسئلة، واجمع النجوم.
 
 </p>
 
 <select id="student">
 
-  <option value="">👤 اختر اسم الطالب</option>
+<option value="">👤 اختر اسمك</option>
 
-  <option>طالب ١</option>
+<option>الطالب ١</option>
 
-  <option>طالب ٢</option>
+<option>الطالب ٢</option>
 
-  <option>طالب ٣</option>
+<option>الطالب ٣</option>
 
-  <option>طالب ٤</option>
+<option>الطالب ٤</option>
 
-  <option>طالب ٥</option>
+<option>الطالب ٥</option>
 
 </select>
 
@@ -438,147 +352,123 @@ footer{
 
 <span class="number" id="finished">0</span>
 
-📖 نصوص أنجزتها
+📖 إنجازاتي
 
 </div>
 
 <div class="stat">
 
-<span class="number" id="level">مبتدئ</span>
+<span class="number" id="level">🌱</span>
 
-🏆 مستواي
-
-</div>
+مستواي
 
 </div>
 
-<div id="message">
+</div>
 
-اختر اسمك أولًا ثم ابدأ رحلة القراءة 🚀
+<p id="message">
+
+اختر اسمك وابدأ رحلة القراءة 🚀
+
+</p>
 
 </div>
 
-</section>
+<div class="card">
 
-<h2 class="section-title">📚 مكتبة اقرأ وانطلق</h2>
+<h2 class="center">📚 مكتبة اقرأ وانطلق</h2>
 
-<div class="library">
+<div class="stories">
 
 <div class="story">
 
-<div class="story-icon">🌳</div>
+<div class="icon">🌳</div>
 
 <h3>الشجرة الكريمة</h3>
 
+<p>قصة عن العطاء والمحافظة على البيئة.</p>
+
+<button onclick="openStory('s1')">
+
+اقرأ القصة 📖
+
+</button>
+
+<div class="storyText" id="s1">
+
 <p>
 
-في صباح جميل خرج سالم إلى حديقة منزله،
+زرع سالم شجرة صغيرة أمام منزله، وكان يسقيها كل صباح.
 
-فرأى شجرةً كبيرةً تظلل المكان.
+مرت الأيام وكبرت الشجرة، فصار الناس يستظلون بظلها،
 
-اعتنى بها وسقاها بالماء،
+وتقف الطيور على أغصانها.
 
-فأهدته ثمارًا لذيذة وظلًا جميلًا.
+فرح سالم وقال: من يزرع الخير يحصد الخير.
 
 </p>
 
-<span class="badge">+10 نقاط</span>
+<p><strong>لماذا كان سالم يسقي الشجرة؟</strong></p>
 
-<button class="read-btn"
+<button class="correct"
 
-onclick="completeStory('الشجرة الكريمة',10)">
+onclick="answer('الشجرة الكريمة',10)">
 
-أنجزت القراءة ✓
+لكي تنمو 🌱
+
+</button>
+
+<button onclick="wrong()">
+
+لكي تذبل
 
 </button>
 
 </div>
 
-<div class="story">
-
-<div class="story-icon">🐦</div>
-
-<h3>العصفور الصغير</h3>
-
-<p>
-
-وجدت مريم عصفورًا صغيرًا قرب نافذة المنزل.
-
-وضعت له قليلًا من الماء والحبوب،
-
-ثم تركته يطير عندما أصبح قويًا.
-
-فرحت مريم لأنها أحسنت إليه.
-
-</p>
-
-<span class="badge">+10 نقاط</span>
-
-<button class="read-btn"
-
-onclick="completeStory('العصفور الصغير',10)">
-
-أنجزت القراءة ✓
-
-</button>
-
 </div>
 
 <div class="story">
 
-<div class="story-icon">🌊</div>
-
-<h3>رحلة إلى البحر</h3>
-
-<p>
-
-ذهب مازن مع أسرته إلى البحر.
-
-شاهد الأمواج والقوارب الجميلة،
-
-وحافظ على نظافة الشاطئ،
-
-ووضع النفايات في المكان المخصص لها.
-
-</p>
-
-<span class="badge">+10 نقاط</span>
-
-<button class="read-btn"
-
-onclick="completeStory('رحلة إلى البحر',10)">
-
-أنجزت القراءة ✓
-
-</button>
-
-</div>
-
-<div class="story">
-
-<div class="story-icon">🤝</div>
+<div class="icon">🤝</div>
 
 <h3>يدًا بيد</h3>
 
+<p>قصة عن التعاون ومساعدة الآخرين.</p>
+
+<button onclick="openStory('s2')">
+
+اقرأ القصة 📖
+
+</button>
+
+<div class="storyText" id="s2">
+
 <p>
 
-تعاون طلبة الصف في ترتيب مكتبتهم.
+وجد خالد زميله يحمل مجموعة كبيرة من الكتب،
 
-حمل بعضهم الكتب،
+فأسرع إليه وساعده.
 
-ورتب الآخرون الرفوف.
+ابتسم زميله وشكره.
 
-وبالتعاون أصبحت المكتبة جميلة ومنظمة.
+قال خالد: بالتعاون تصبح الأعمال أسهل وأجمل.
 
 </p>
 
-<span class="badge">+10 نقاط</span>
+<p><strong>ما القيمة التي تعلمناها من القصة؟</strong></p>
 
-<button class="read-btn"
+<button class="correct"
 
-onclick="completeStory('يدًا بيد',10)">
+onclick="answer('يدًا بيد',10)">
 
-أنجزت القراءة ✓
+التعاون 🤝
+
+</button>
+
+<button onclick="wrong()">
+
+الكسل
 
 </button>
 
@@ -586,215 +476,327 @@ onclick="completeStory('يدًا بيد',10)">
 
 </div>
 
-<section class="teacher-panel">
+<div class="story">
+
+<div class="icon">🐦</div>
+
+<h3>العصفور الصغير</h3>
+
+<p>قصة عن الرحمة والرفق.</p>
+
+<button onclick="openStory('s3')">
+
+اقرأ القصة 📖
+
+</button>
+
+<div class="storyText" id="s3">
+
+<p>
+
+رأى ماجد عصفورًا صغيرًا بجانب شجرة.
+
+اقترب منه بهدوء ووضع له قليلًا من الماء.
+
+بعد وقت قصير طار العصفور فرحًا،
+
+فشعر ماجد بالسعادة لأنه أحسن إليه.
+
+</p>
+
+<p><strong>ماذا قدم ماجد للعصفور؟</strong></p>
+
+<button class="correct"
+
+onclick="answer('العصفور الصغير',10)">
+
+الماء 💧
+
+</button>
+
+<button onclick="wrong()">
+
+كتابًا
+
+</button>
+
+</div>
+
+</div>
+
+<div class="story">
+
+<div class="icon">🌊</div>
+
+<h3>الشاطئ الجميل</h3>
+
+<p>قصة عن المحافظة على البيئة.</p>
+
+<button onclick="openStory('s4')">
+
+اقرأ القصة 📖
+
+</button>
+
+<div class="storyText" id="s4">
+
+<p>
+
+ذهب راشد مع أسرته إلى الشاطئ.
+
+استمتع بمشاهدة البحر والأمواج،
+
+وقبل أن يعود جمع النفايات ووضعها في المكان المخصص لها.
+
+ابتسم والده وقال: أنت تحافظ على جمال وطنك.
+
+</p>
+
+<p><strong>ماذا فعل راشد قبل العودة؟</strong></p>
+
+<button class="correct"
+
+onclick="answer('الشاطئ الجميل',10)">
+
+جمع النفايات 🗑️
+
+</button>
+
+<button onclick="wrong()">
+
+ترك النفايات
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card teacherBox center">
 
 <h2>🔐 لوحة المعلمة</h2>
 
 <p>
 
-قسم مخصص لمتابعة نقاط الطلبة وإنجازاتهم في القراءة.
+لمتابعة نقاط الطلبة وإنجازاتهم المسجلة على هذا الجهاز.
 
 </p>
 
-<button class="teacher-btn" onclick="teacherPanel()">
+<button onclick="teacherPanel()">
 
-دخول لوحة المعلمة 👩🏻‍🏫
+👩🏻‍🏫 فتح لوحة المعلمة
 
 </button>
 
-</section>
+</div>
 
 </div>
 
 <footer>
 
-<div>
+🌷 <strong>إعداد وإشراف الأستاذة: محفوظة السعدي</strong>
 
-🌸 إعداد وإشراف الأستاذة
+<br>
 
-<strong>محفوظة السعدي</strong>
+⭐ المعلمة الأولى: ميمونة البلوشي
 
-</div>
+<br>
 
-<div>
+👑 مديرة المدرسة: أ. ابتسام البلوشي
+
+<br><br>
 
 📚 اقرأ اليوم… وانطلق نحو التميز غدًا 🚀
 
-</div>
-
-<div>
+<br>
 
 © 2026 منصة اقرأ وانطلق – الصف ٤/٤
-
-</div>
 
 </footer>
 
 <script>
 
-let currentStudent = "";
+let currentStudent="";
 
-let data = JSON.parse(localStorage.getItem("readingData") || "{}");
+let data=JSON.parse(localStorage.getItem("iqraData")||"{}");
 
-const studentSelect = document.getElementById("student");
+const student=document.getElementById("student");
 
-studentSelect.addEventListener("change", function(){
+student.addEventListener("change",function(){
 
-  currentStudent = this.value;
+currentStudent=this.value;
 
-  if(!currentStudent){
+if(!currentStudent){
 
-    document.getElementById("message").innerText =
-
-    "اختر اسمك أولًا ثم ابدأ رحلة القراءة 🚀";
-
-    return;
-
-  }
-
-  if(!data[currentStudent]){
-
-    data[currentStudent] = {
-
-      points:0,
-
-      stories:[]
-
-    };
-
-    save();
-
-  }
-
-  updateScreen();
-
-  document.getElementById("message").innerText =
-
-  "مرحبًا " + currentStudent + " 🌟 ابدأ القراءة واجمع النجوم!";
-
-});
-
-function completeStory(title,pts){
-
-  if(!currentStudent){
-
-    alert("🌷 اختر اسمك أولًا.");
-
-    return;
-
-  }
-
-  if(data[currentStudent].stories.includes(title)){
-
-    alert("👏 لقد أنجزت هذا النص من قبل.");
-
-    return;
-
-  }
-
-  data[currentStudent].stories.push(title);
-
-  data[currentStudent].points += pts;
-
-  save();
-
-  updateScreen();
-
-  alert(
-
-    "أحسنت يا " + currentStudent +
-
-    " 🌟\nحصلت على " + pts + " نقاط!"
-
-  );
+return;
 
 }
 
-function updateScreen(){
+if(!data[currentStudent]){
 
-  if(!currentStudent) return;
+data[currentStudent]={
 
-  let p = data[currentStudent].points;
+points:0,
 
-  let count = data[currentStudent].stories.length;
+stories:[]
 
-  document.getElementById("points").innerText = p;
+};
 
-  document.getElementById("finished").innerText = count;
+save();
 
-  let level = "مبتدئ 🌱";
+}
 
-  if(p >= 20) level = "قارئ مميز ⭐";
+update();
 
-  if(p >= 40) level = "بطل القراءة 🏆";
+document.getElementById("message").innerText=
 
-  if(p >= 70) level = "قارئ متألق 👑";
+"🌟 مرحبًا "+currentStudent+"، هيا نقرأ وننطلق!";
 
-  document.getElementById("level").innerText = level;
+});
+
+function openStory(id){
+
+if(!currentStudent){
+
+alert("🌷 اختر اسمك أولًا.");
+
+return;
+
+}
+
+let box=document.getElementById(id);
+
+box.style.display=
+
+box.style.display==="block"?"none":"block";
+
+}
+
+function answer(title,pts){
+
+if(!currentStudent){
+
+alert("اختر اسمك أولًا.");
+
+return;
+
+}
+
+if(data[currentStudent].stories.includes(title)){
+
+alert("⭐ أحسنت! لقد حصلت على نقاط هذه القصة مسبقًا.");
+
+return;
+
+}
+
+data[currentStudent].stories.push(title);
+
+data[currentStudent].points+=pts;
+
+save();
+
+update();
+
+alert("👏 إجابة صحيحة! حصلت على "+pts+" نقاط ⭐");
+
+}
+
+function wrong(){
+
+alert("🌷 حاول مرة أخرى، أنت تستطيع!");
+
+}
+
+function update(){
+
+if(!currentStudent)return;
+
+let p=data[currentStudent].points;
+
+let completed=data[currentStudent].stories.length;
+
+document.getElementById("points").innerText=p;
+
+document.getElementById("finished").innerText=completed;
+
+let level="🌱";
+
+if(p>=10) level="⭐";
+
+if(p>=20) level="🌟";
+
+if(p>=40) level="🏆";
+
+document.getElementById("level").innerText=level;
 
 }
 
 function save(){
 
-  localStorage.setItem("readingData",JSON.stringify(data));
+localStorage.setItem("iqraData",JSON.stringify(data));
 
 }
 
 function teacherPanel(){
 
-  let password = prompt("🔐 أدخلي رمز لوحة المعلمة:");
+let password=prompt("🔐 أدخلي رمز لوحة المعلمة:");
 
-  if(password !== "4444"){
+if(password!=="4444"){
 
-    if(password !== null){
+if(password!==null){
 
-      alert("الرمز غير صحيح.");
+alert("الرمز غير صحيح.");
 
-    }
+}
 
-    return;
+return;
 
-  }
+}
 
-  let report = "📊 تقرير اقرأ وانطلق\n\n";
+let names=Object.keys(data);
 
-  let names = Object.keys(data);
+let report="📊 تقرير طلبة الصف ٤/٤\n\n";
 
-  if(names.length === 0){
+if(names.length===0){
 
-    report += "لا توجد نتائج مسجلة على هذا الجهاز حتى الآن.";
+report+="لا توجد نتائج مسجلة على هذا الجهاز حتى الآن.";
 
-  }else{
+}else{
 
-    names.sort(function(a,b){
+names.sort(function(a,b){
 
-      return data[b].points - data[a].points;
+return data[b].points-data[a].points;
 
-    });
+});
 
-    names.forEach(function(name,index){
+names.forEach(function(name,index){
 
-      report +=
+report+=
 
-      (index+1) + ". " +
+(index+1)+". "+
 
-      name +
+name+
 
-      " — ⭐ " +
+" ⭐ "+
 
-      data[name].points +
+data[name].points+
 
-      " نقطة — 📖 " +
+" نقطة | 📖 "+
 
-      data[name].stories.length +
+data[name].stories.length+
 
-      " نصوص\n";
+" نصوص\n";
 
-    });
+});
 
-  }
+}
 
-  alert(report);
+alert(report);
 
 }
 
