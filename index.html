@@ -6,247 +6,349 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>اقرأ وانطلق 🚀</title>
+<title>اقرأ وانطلق 🚀 | الصف ٤/٤</title>
 
 <style>
 
-*{box-sizing:border-box}
+*{
+
+  box-sizing:border-box;
+
+}
 
 body{
 
-margin:0;
+  margin:0;
 
-font-family:Tahoma,Arial,sans-serif;
+  font-family:Tahoma, Arial, sans-serif;
 
-background:linear-gradient(135deg,#eefcff,#fff8e8,#f4efff);
+  background:linear-gradient(135deg,#f7f2ff,#fff8e8,#eefcff);
 
-color:#263238;
+  color:#382d52;
+
+  min-height:100vh;
 
 }
 
 header{
 
-background:linear-gradient(135deg,#5b4ee8,#28b7c9);
+  text-align:center;
 
-color:white;
+  padding:25px 15px;
 
-padding:32px 15px;
+  background:linear-gradient(135deg,#7656b8,#a778d0);
 
-text-align:center;
+  color:white;
 
-border-radius:0 0 35px 35px;
+  border-radius:0 0 35px 35px;
+
+  box-shadow:0 5px 18px rgba(0,0,0,.12);
 
 }
 
-header h1{font-size:38px;margin:5px}
+.logo{
 
-header p{font-size:18px}
+  width:125px;
+
+  height:125px;
+
+  object-fit:contain;
+
+  background:white;
+
+  border-radius:50%;
+
+  padding:8px;
+
+  margin-bottom:8px;
+
+}
+
+h1{
+
+  margin:5px 0;
+
+  font-size:30px;
+
+}
+
+.subtitle{
+
+  font-size:18px;
+
+  margin:6px 0 15px;
+
+}
+
+.school-info{
+
+  background:rgba(255,255,255,.17);
+
+  max-width:600px;
+
+  margin:auto;
+
+  padding:13px;
+
+  border-radius:18px;
+
+  line-height:2;
+
+}
+
+.teacher{
+
+  font-weight:bold;
+
+  color:#fff6b7;
+
+}
 
 .container{
 
-max-width:900px;
+  max-width:900px;
 
-margin:auto;
+  margin:auto;
 
-padding:18px;
-
-}
-
-.card{
-
-background:white;
-
-padding:22px;
-
-margin:18px 0;
-
-border-radius:25px;
-
-box-shadow:0 8px 25px #00000015;
+  padding:20px;
 
 }
 
-.hero{text-align:center}
+.welcome{
 
-.hero .rocket{font-size:70px}
+  background:white;
 
-select,button{
+  padding:20px;
 
-width:100%;
+  border-radius:25px;
 
-padding:15px;
+  text-align:center;
 
-margin:8px 0;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
 
-border-radius:15px;
-
-font-size:17px;
-
-border:2px solid #ddd;
+  margin-bottom:20px;
 
 }
 
-button{
+select{
 
-background:#5b4ee8;
+  width:100%;
 
-color:white;
+  max-width:430px;
 
-border:0;
+  padding:14px;
 
-font-weight:bold;
+  font-size:17px;
 
-cursor:pointer;
+  border:2px solid #c8b6e8;
+
+  border-radius:15px;
+
+  background:white;
+
+  margin:10px 0;
 
 }
-
-button:hover{transform:scale(1.02)}
 
 .stats{
 
-display:grid;
+  display:grid;
 
-grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(3,1fr);
 
-gap:10px;
+  gap:10px;
 
-text-align:center;
+  margin-top:15px;
 
 }
 
 .stat{
 
-background:#f4f2ff;
+  background:#f7f2ff;
 
-padding:14px 5px;
+  border-radius:16px;
 
-border-radius:18px;
+  padding:12px 5px;
 
 }
 
-.big{font-size:25px;font-weight:bold;color:#5b4ee8}
+.number{
+
+  display:block;
+
+  font-size:24px;
+
+  font-weight:bold;
+
+  color:#7656b8;
+
+}
+
+.section-title{
+
+  text-align:center;
+
+  margin:28px 0 15px;
+
+  color:#68499c;
+
+}
+
+.library{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+  gap:15px;
+
+}
 
 .story{
 
-border-right:7px solid #ffc94d;
+  background:white;
+
+  border-radius:22px;
+
+  padding:20px;
+
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+  text-align:center;
+
+  border-top:6px solid #d6c1f0;
 
 }
 
-.story h2{color:#4e42cf}
+.story-icon{
 
-.storyText{
-
-background:#fff9e9;
-
-padding:17px;
-
-border-radius:17px;
-
-font-size:18px;
-
-line-height:2;
+  font-size:45px;
 
 }
 
-.question{
+.story h3{
 
-background:#f4faff;
-
-padding:14px;
-
-margin:12px 0;
-
-border-radius:16px;
+  color:#68499c;
 
 }
 
-.option{
+.story p{
 
-display:block;
+  line-height:1.9;
 
-background:white;
-
-border:1px solid #ddd;
-
-padding:10px;
-
-margin:7px 0;
-
-border-radius:12px;
+  color:#625b6e;
 
 }
 
-.success{
+button{
 
-background:#e7faee;
+  border:0;
 
-color:#16733a;
+  border-radius:15px;
 
-padding:15px;
+  padding:12px 20px;
 
-border-radius:15px;
+  font-size:16px;
 
-text-align:center;
+  font-weight:bold;
 
-font-weight:bold;
+  cursor:pointer;
 
 }
 
-.lock{
+.read-btn{
 
-background:#fff3d6;
+  background:#7656b8;
 
-padding:12px;
+  color:white;
 
-border-radius:12px;
+  width:100%;
 
-text-align:center;
+}
+
+.read-btn:hover{
+
+  background:#60449b;
+
+}
+
+.teacher-panel{
+
+  margin-top:30px;
+
+  background:#fff9e9;
+
+  border:2px dashed #e4b954;
+
+  border-radius:22px;
+
+  padding:20px;
+
+  text-align:center;
+
+}
+
+.teacher-btn{
+
+  background:#f1c85b;
+
+  color:#473a1f;
+
+}
+
+#message{
+
+  margin-top:15px;
+
+  font-weight:bold;
+
+  color:#6b4ba0;
+
+  min-height:25px;
+
+}
+
+footer{
+
+  text-align:center;
+
+  padding:25px 10px;
+
+  margin-top:30px;
+
+  background:#4d3a70;
+
+  color:white;
+
+  line-height:1.9;
 
 }
 
 .badge{
 
-display:inline-block;
+  display:inline-block;
 
-background:#ffdf65;
+  background:#fff0a8;
 
-padding:7px 13px;
+  color:#5c4714;
 
-border-radius:20px;
+  padding:5px 12px;
 
-font-weight:bold;
+  border-radius:20px;
 
-}
-
-.progress{
-
-height:18px;
-
-background:#eee;
-
-border-radius:20px;
-
-overflow:hidden;
+  margin:5px;
 
 }
-
-.progress div{
-
-height:100%;
-
-background:linear-gradient(90deg,#28b7c9,#5b4ee8);
-
-}
-
-footer{text-align:center;padding:25px;color:#666}
 
 @media(max-width:600px){
 
-header h1{font-size:31px}
+  h1{font-size:25px;}
 
-.stats{grid-template-columns:1fr 1fr 1fr}
+  .stats{grid-template-columns:1fr;}
+
+  .logo{width:105px;height:105px;}
 
 }
 
@@ -258,463 +360,441 @@ header h1{font-size:31px}
 
 <header>
 
-<div style="font-size:60px">📚🚀</div>
+<img
 
-<h1>اقرأ وانطلق!</h1>
+  src="school-logo.png"
 
-<p>كل قصة مغامرة... وكل إجابة تقرّبك من القمة 🏆</p>
+  alt="شعار المدرسة"
+
+  class="logo"
+
+  onerror="this.style.display='none'"
+
+>
+
+<h1>📚 منصة اقرأ وانطلق 🚀</h1>
+
+<div class="subtitle">
+
+  منصة القراءة التفاعلية لطلبة الصف ٤/٤
+
+</div>
+
+<div class="school-info">
+
+  <div>🌷 مديرة المدرسة: <strong>أ. ابتسام البلوشي</strong></div>
+
+  <div>🌷 المعلمة الأولى: <strong>ميمونة البلوشي</strong></div>
+
+  <div class="teacher">
+
+    ✨ إعداد وإشراف الأستاذة: محفوظة السعدي ✨
+
+  </div>
+
+</div>
 
 </header>
 
 <div class="container">
 
-<div class="card hero">
+<section class="welcome">
 
-<div class="rocket">🧑‍🚀📖</div>
+<h2>🌟 أهلًا بقارئنا المبدع 🌟</h2>
 
-<h2>مرحبًا بك في عالم القراءة!</h2>
+<p>
 
-<p>اختر اسمك، اقرأ القصة بعناية، ثم أجب عن الأسئلة لتجمع النجوم.</p>
+اختر اسمك، واقرأ النصوص، واجمع النجوم والنقاط حتى تصبح من أبطال القراءة.
+
+</p>
 
 <select id="student">
 
-<option value="">✨ اختر اسمك ✨</option>
+  <option value="">👤 اختر اسم الطالب</option>
 
-<option>أحمد بن محمد بن سيف محمد القتوني</option>
+  <option>طالب ١</option>
 
-<option>إسحاق بن أيمن بن سليمان حمدان اللمكي</option>
+  <option>طالب ٢</option>
 
-<option>الجندي بن مسعود بن مبارك سيف المقبالي</option>
+  <option>طالب ٣</option>
 
-<option>الفيصل بن طارق بن حمد سعيد البويقي</option>
+  <option>طالب ٤</option>
 
-<option>بثينة بنت مانع بن حسن سعيد السعدية</option>
-
-<option>جود بنت عبدالسلام بن هديب يوسف السعدية</option>
-
-<option>حمد بن أحمد بن عبدالله علي السعدي</option>
-
-<option>حمدان بن خالد بن محمد علي المزروعي</option>
-
-<option>حمدان بن محمد بن عبدالله سالم التبعي</option>
-
-<option>رؤيا بنت محمد بن سالم مرهون الجابرية</option>
-
-<option>رويدا بنت راشد بن خليفة ناصر الغافرية</option>
-
-<option>ريام بنت عماد بن علي محمد الكيانية</option>
-
-<option>ريفال بنت سالم بن محمد إبراهيم البلوشية</option>
-
-<option>ريم بنت غافل بن سالم حمد القتونية</option>
-
-<option>سارة بنت أيمن بن سليمان حمدان اللمكية</option>
-
-<option>سالم بن ساعد بن سالم خميس البويقي</option>
-
-<option>سعود بن حمد بن عبدالله محمد المعمري</option>
-
-<option>سيف بن سلطان بن محمد سليم القتوني</option>
-
-<option>شفا إشتياق حسين</option>
-
-<option>شيخة بنت سيف بن خليفة سليمان العبرية</option>
-
-<option>ضحى بنت محمد بن حمد علي السعدية</option>
-
-<option>عبدالرحمن بن خالد بن ربيع بلال التوفيقي</option>
-
-<option>عبدالله بن مرتضى بن عبدالله سليمان العجمي</option>
-
-<option>غالية بنت هلال بن طالب علي الغافرية</option>
-
-<option>محمد بن خميس بن عبدالله</option>
-
-<option>محمود بن خليل بن ذياب يعقوب السعدي</option>
-
-<option>ميرة بنت سالم بن راشد زعل السعدية</option>
-
-<option>نوف بنت خالد بن محمد خليفة السعدية</option>
-
-<option>وليد بن خالد بن عبدالله سالم الغافري</option>
-
-<option>وهب بن أيمن بن مبارك سليمان الهاشمي</option>
-
-<option>يمنى بنت عبدالله بن راشد علي اليحمدية</option>
+  <option>طالب ٥</option>
 
 </select>
 
-<button onclick="start()">🚀 ابدأ مغامرتي</button>
-
-</div>
-
-<div id="dashboard" style="display:none">
-
-<div class="card">
-
-<h2>🌟 مغامر القراءة: <span id="name"></span></h2>
-
 <div class="stats">
 
-<div class="stat">⭐<div class="big" id="points">0</div>نقطة</div>
+<div class="stat">
 
-<div class="stat">📚<div class="big" id="finished">0</div>قصة</div>
+<span class="number" id="points">0</span>
 
-<div class="stat">🏅<div class="big" id="level">مستكشف</div></div>
-
-</div>
-
-<p>تقدمك نحو القمة:</p>
-
-<div class="progress"><div id="bar" style="width:0%"></div></div>
+⭐ نقاطي
 
 </div>
 
-<div class="card story">
+<div class="stat">
 
-<span class="badge">المغامرة 1 🌱</span>
+<span class="number" id="finished">0</span>
 
-<h2>البذرة الصغيرة</h2>
-
-<div class="storyText">
-
-وجد سالم بذرة صغيرة في حديقة منزله، فقرر أن يزرعها.
-
-وضعها في التربة وسقاها بالماء كل صباح.
-
-مرت الأيام ولم يرَ شيئًا، لكنه لم يفقد الأمل.
-
-وفي صباح جميل خرج سالم إلى الحديقة، فوجد نبتة خضراء صغيرة قد ظهرت.
-
-فرح سالم كثيرًا، وأدرك أن الصبر والعناية يصنعان نتائج جميلة.
+📖 نصوص أنجزتها
 
 </div>
 
-<h3>🧠 اختبر فهمك</h3>
+<div class="stat">
 
-<div class="question">
+<span class="number" id="level">مبتدئ</span>
 
-<b>1. ماذا وجد سالم؟</b>
-
-<label class="option"><input type="radio" name="q1" value="0"> حجرًا</label>
-
-<label class="option"><input type="radio" name="q1" value="1"> بذرة صغيرة</label>
-
-<label class="option"><input type="radio" name="q1" value="0"> كتابًا</label>
-
-</div>
-
-<div class="question">
-
-<b>2. ماذا كان يفعل سالم كل صباح؟</b>
-
-<label class="option"><input type="radio" name="q2" value="1"> يسقي البذرة</label>
-
-<label class="option"><input type="radio" name="q2" value="0"> يخرجها من التربة</label>
-
-<label class="option"><input type="radio" name="q2" value="0"> يتركها بلا ماء</label>
-
-</div>
-
-<div class="question">
-
-<b>3. ما القيمة التي نتعلمها من القصة؟</b>
-
-<label class="option"><input type="radio" name="q3" value="0"> التسرع</label>
-
-<label class="option"><input type="radio" name="q3" value="1"> الصبر والعناية</label>
-
-<label class="option"><input type="radio" name="q3" value="0"> الإهمال</label>
-
-</div>
-
-<div class="lock">🔐 لا تُضاف النقاط إلا بعد الإجابة عن جميع الأسئلة.</div>
-
-<button onclick="checkStory1()">تحقق من إجاباتي ⭐</button>
-
-<div id="result1"></div>
-
-</div>
-
-<div class="card story">
-
-<span class="badge">المغامرة 2 🐦</span>
-
-<h2>العصفور المتعاون</h2>
-
-<div class="storyText">
-
-في صباح مشمس وجد عصفور صغير غصنًا ثقيلًا لبناء عشه.
-
-حاول حمله وحده لكنه لم يستطع.
-
-طلب المساعدة من أصدقائه، فجاءت العصافير وتعاونت معه.
-
-حملوا الغصن معًا وأكملوا بناء العش بسرعة.
-
-شكر العصفور أصدقاءه وعرف الجميع أن التعاون يجعل الأعمال الصعبة أسهل.
-
-</div>
-
-<div class="question">
-
-<b>1. لماذا احتاج العصفور إلى المساعدة؟</b>
-
-<label class="option"><input type="radio" name="q4" value="1"> لأن الغصن كان ثقيلًا</label>
-
-<label class="option"><input type="radio" name="q4" value="0"> لأنه لا يريد بناء العش</label>
-
-<label class="option"><input type="radio" name="q4" value="0"> لأنه كان نائمًا</label>
-
-</div>
-
-<div class="question">
-
-<b>2. ماذا فعل أصدقاء العصفور؟</b>
-
-<label class="option"><input type="radio" name="q5" value="0"> تركوه وحده</label>
-
-<label class="option"><input type="radio" name="q5" value="1"> تعاونوا معه</label>
-
-<label class="option"><input type="radio" name="q5" value="0"> أخذوا الغصن</label>
-
-</div>
-
-<div class="question">
-
-<b>3. الفكرة الرئيسة للقصة هي:</b>
-
-<label class="option"><input type="radio" name="q6" value="1"> التعاون يسهل العمل</label>
-
-<label class="option"><input type="radio" name="q6" value="0"> العمل وحدنا دائمًا أفضل</label>
-
-<label class="option"><input type="radio" name="q6" value="0"> عدم مساعدة الآخرين</label>
-
-</div>
-
-<div class="lock">🔐 أجب عن جميع الأسئلة أولًا.</div>
-
-<button onclick="checkStory2()">تحقق من إجاباتي ⭐</button>
-
-<div id="result2"></div>
-
-</div>
-
-<div class="card" style="text-align:center">
-
-<h2>🏆 طريق القارئ المتميز</h2>
-
-<p>🌱 مستكشف الكلمات → 🚀 مغامر القصص → ⭐ نجم القراءة → 👑 أسطورة القراءة</p>
-
-<h3 id="message">واصل القراءة... القمة تنتظرك!</h3>
+🏆 مستواي
 
 </div>
 
 </div>
+
+<div id="message">
+
+اختر اسمك أولًا ثم ابدأ رحلة القراءة 🚀
+
+</div>
+
+</section>
+
+<h2 class="section-title">📚 مكتبة اقرأ وانطلق</h2>
+
+<div class="library">
+
+<div class="story">
+
+<div class="story-icon">🌳</div>
+
+<h3>الشجرة الكريمة</h3>
+
+<p>
+
+في صباح جميل خرج سالم إلى حديقة منزله،
+
+فرأى شجرةً كبيرةً تظلل المكان.
+
+اعتنى بها وسقاها بالماء،
+
+فأهدته ثمارًا لذيذة وظلًا جميلًا.
+
+</p>
+
+<span class="badge">+10 نقاط</span>
+
+<button class="read-btn"
+
+onclick="completeStory('الشجرة الكريمة',10)">
+
+أنجزت القراءة ✓
+
+</button>
+
+</div>
+
+<div class="story">
+
+<div class="story-icon">🐦</div>
+
+<h3>العصفور الصغير</h3>
+
+<p>
+
+وجدت مريم عصفورًا صغيرًا قرب نافذة المنزل.
+
+وضعت له قليلًا من الماء والحبوب،
+
+ثم تركته يطير عندما أصبح قويًا.
+
+فرحت مريم لأنها أحسنت إليه.
+
+</p>
+
+<span class="badge">+10 نقاط</span>
+
+<button class="read-btn"
+
+onclick="completeStory('العصفور الصغير',10)">
+
+أنجزت القراءة ✓
+
+</button>
+
+</div>
+
+<div class="story">
+
+<div class="story-icon">🌊</div>
+
+<h3>رحلة إلى البحر</h3>
+
+<p>
+
+ذهب مازن مع أسرته إلى البحر.
+
+شاهد الأمواج والقوارب الجميلة،
+
+وحافظ على نظافة الشاطئ،
+
+ووضع النفايات في المكان المخصص لها.
+
+</p>
+
+<span class="badge">+10 نقاط</span>
+
+<button class="read-btn"
+
+onclick="completeStory('رحلة إلى البحر',10)">
+
+أنجزت القراءة ✓
+
+</button>
+
+</div>
+
+<div class="story">
+
+<div class="story-icon">🤝</div>
+
+<h3>يدًا بيد</h3>
+
+<p>
+
+تعاون طلبة الصف في ترتيب مكتبتهم.
+
+حمل بعضهم الكتب،
+
+ورتب الآخرون الرفوف.
+
+وبالتعاون أصبحت المكتبة جميلة ومنظمة.
+
+</p>
+
+<span class="badge">+10 نقاط</span>
+
+<button class="read-btn"
+
+onclick="completeStory('يدًا بيد',10)">
+
+أنجزت القراءة ✓
+
+</button>
+
+</div>
+
+</div>
+
+<section class="teacher-panel">
+
+<h2>🔐 لوحة المعلمة</h2>
+
+<p>
+
+قسم مخصص لمتابعة نقاط الطلبة وإنجازاتهم في القراءة.
+
+</p>
+
+<button class="teacher-btn" onclick="teacherPanel()">
+
+دخول لوحة المعلمة 👩🏻‍🏫
+
+</button>
+
+</section>
 
 </div>
 
 <footer>
 
-✨ اقرأ • فكّر • أجب • انطلق 🚀<br>
+<div>
 
-منصة اقرأ وانطلق | الصف ٤/٤
+🌸 إعداد وإشراف الأستاذة
+
+<strong>محفوظة السعدي</strong>
+
+</div>
+
+<div>
+
+📚 اقرأ اليوم… وانطلق نحو التميز غدًا 🚀
+
+</div>
+
+<div>
+
+© 2026 منصة اقرأ وانطلق – الصف ٤/٤
+
+</div>
 
 </footer>
 
 <script>
 
-let current="";
+let currentStudent = "";
 
-let points=0;
+let data = JSON.parse(localStorage.getItem("readingData") || "{}");
 
-let finished=0;
+const studentSelect = document.getElementById("student");
 
-let completed1=false;
+studentSelect.addEventListener("change", function(){
 
-let completed2=false;
+  currentStudent = this.value;
 
-function start(){
+  if(!currentStudent){
 
-current=document.getElementById("student").value;
+    document.getElementById("message").innerText =
 
-if(!current){
+    "اختر اسمك أولًا ثم ابدأ رحلة القراءة 🚀";
 
-alert("🌟 اختر اسمك أولًا");
+    return;
 
-return;
+  }
 
-}
+  if(!data[currentStudent]){
 
-let saved=JSON.parse(localStorage.getItem("reader_"+current)||"{}");
+    data[currentStudent] = {
 
-points=saved.points||0;
+      points:0,
 
-finished=saved.finished||0;
+      stories:[]
 
-completed1=saved.completed1||false;
+    };
 
-completed2=saved.completed2||false;
+    save();
 
-document.getElementById("name").innerText=current;
+  }
 
-document.getElementById("dashboard").style.display="block";
+  updateScreen();
 
-update();
+  document.getElementById("message").innerText =
 
-document.getElementById("dashboard").scrollIntoView({behavior:"smooth"});
+  "مرحبًا " + currentStudent + " 🌟 ابدأ القراءة واجمع النجوم!";
 
-}
+});
 
-function answered(names){
+function completeStory(title,pts){
 
-for(let n of names){
+  if(!currentStudent){
 
-if(!document.querySelector('input[name="'+n+'"]:checked')) return false;
+    alert("🌷 اختر اسمك أولًا.");
 
-}
+    return;
 
-return true;
+  }
 
-}
+  if(data[currentStudent].stories.includes(title)){
 
-function correct(names){
+    alert("👏 لقد أنجزت هذا النص من قبل.");
 
-let total=0;
+    return;
 
-for(let n of names){
+  }
 
-let a=document.querySelector('input[name="'+n+'"]:checked');
+  data[currentStudent].stories.push(title);
 
-if(a && a.value==="1") total++;
+  data[currentStudent].points += pts;
 
-}
+  save();
 
-return total;
+  updateScreen();
 
-}
+  alert(
 
-function checkStory1(){
+    "أحسنت يا " + currentStudent +
 
-if(!current){alert("اختر اسمك أولًا");return;}
+    " 🌟\nحصلت على " + pts + " نقاط!"
 
-if(!answered(["q1","q2","q3"])){
-
-alert("📖 أجب عن جميع الأسئلة أولًا");
-
-return;
+  );
 
 }
 
-let c=correct(["q1","q2","q3"]);
+function updateScreen(){
 
-let box=document.getElementById("result1");
+  if(!currentStudent) return;
 
-if(c===3){
+  let p = data[currentStudent].points;
 
-if(!completed1){
+  let count = data[currentStudent].stories.length;
 
-points+=30;
+  document.getElementById("points").innerText = p;
 
-finished++;
+  document.getElementById("finished").innerText = count;
 
-completed1=true;
+  let level = "مبتدئ 🌱";
 
-save();
+  if(p >= 20) level = "قارئ مميز ⭐";
 
-}
+  if(p >= 40) level = "بطل القراءة 🏆";
 
-box.innerHTML='<div class="success">🎉 أحسنت! جميع إجاباتك صحيحة<br>حصلت على 30 نقطة ⭐</div>';
+  if(p >= 70) level = "قارئ متألق 👑";
 
-}else{
-
-box.innerHTML='<div class="lock">لديك '+c+' من 3 إجابات صحيحة. حاول مرة أخرى 💪</div>';
-
-}
-
-update();
-
-}
-
-function checkStory2(){
-
-if(!current){alert("اختر اسمك أولًا");return;}
-
-if(!answered(["q4","q5","q6"])){
-
-alert("📖 أجب عن جميع الأسئلة أولًا");
-
-return;
-
-}
-
-let c=correct(["q4","q5","q6"]);
-
-let box=document.getElementById("result2");
-
-if(c===3){
-
-if(!completed2){
-
-points+=30;
-
-finished++;
-
-completed2=true;
-
-save();
-
-}
-
-box.innerHTML='<div class="success">🏆 رائع! اجتزت المغامرة بنجاح<br>حصلت على 30 نقطة ⭐</div>';
-
-}else{
-
-box.innerHTML='<div class="lock">لديك '+c+' من 3 إجابات صحيحة. راجع القصة وحاول مجددًا 📚</div>';
-
-}
-
-update();
+  document.getElementById("level").innerText = level;
 
 }
 
 function save(){
 
-localStorage.setItem("reader_"+current,JSON.stringify({
-
-points:points,
-
-finished:finished,
-
-completed1:completed1,
-
-completed2:completed2
-
-}));
+  localStorage.setItem("readingData",JSON.stringify(data));
 
 }
 
-function update(){
+function teacherPanel(){
 
-document.getElementById("points").innerText=points;
+  let password = prompt("🔐 أدخلي رمز لوحة المعلمة:");
 
-document.getElementById("finished").innerText=finished;
+  if(password !== "4444"){
 
-let level="مستكشف";
+    if(password !== null){
 
-if(points>=30) level="مغامر";
+      alert("الرمز غير صحيح.");
 
-if(points>=60) level="نجم ⭐";
+    }
 
-document.getElementById("level").innerText=level;
+    return;
 
-document.getElementById("bar").style.width=Math.min(points/60*100,100)+"%";
+  }
 
-if(points>=60){
+  let report = "📊 تقرير اقرأ وانطلق\n\n";
 
-document.getElementById("message").innerHTML="👑 رائع! أصبحت من نجوم القراءة!";
+  let names = Object.keys(data);
 
-}
+  if(names.length === 0){
+
+    report += "لا توجد نتائج مسجلة على هذا الجهاز حتى الآن.";
+
+  }else{
+
+    names.sort(function(a,b){
+
+      return data[b].points - data[a].points;
+
+    });
+
+    names.forEach(function(name,index){
+
+      report +=
+
+      (index+1) + ". " +
+
+      name +
+
+      " — ⭐ " +
+
+      data[name].points +
+
+      " نقطة — 📖 " +
+
+      data[name].stories.length +
+
+      " نصوص\n";
+
+    });
+
+  }
+
+  alert(report);
 
 }
 
