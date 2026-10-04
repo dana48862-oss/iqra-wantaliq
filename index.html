@@ -6,273 +6,195 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>اقرأ وانطلق | الصف ٤/٤</title>
+<title>اقرأ وانطلق 🚀 | الصف ٤/٤</title>
 
 <style>
 
 *{box-sizing:border-box}
 
+:root{
+
+--p:#6950bd;--b:#4aa9df;--g:#efbd45;
+
+--green:#3fa875;--ink:#39324d;
+
+}
+
 body{
 
-margin:0;
+margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);
 
-font-family:Tahoma,Arial,sans-serif;
-
-background:linear-gradient(135deg,#fff8e8,#eefcff,#f6efff);
-
-color:#38304f;
+background:linear-gradient(135deg,#fff9e9,#edfaff,#f7f0ff);
 
 }
 
 header{
 
-text-align:center;
+text-align:center;color:#fff;padding:28px 14px 35px;
 
-padding:25px 15px;
+background:linear-gradient(135deg,#6950bd,#45a9df);
 
-background:linear-gradient(135deg,#7358c9,#55aee8);
-
-color:white;
-
-border-radius:0 0 35px 35px;
+border-radius:0 0 38px 38px;
 
 }
 
 .logo{
 
-width:120px;
+width:115px;height:115px;object-fit:cover;border-radius:50%;
 
-height:120px;
-
-object-fit:cover;
-
-border-radius:50%;
-
-border:5px solid white;
-
-background:white;
-
-box-shadow:0 5px 15px #0003;
+border:5px solid #fff;background:#fff;box-shadow:0 7px 22px #0003;
 
 }
 
-h1{
+h1{font-size:34px;margin:10px 0 4px}
 
-font-size:31px;
+.tag{font-size:18px;margin-bottom:15px}
 
-margin:10px 0 5px;
+.admin{
 
-}
+max-width:650px;margin:auto;padding:13px;
 
-.subtitle{
+background:#ffffff20;border:1px solid #ffffff40;
 
-font-size:18px;
-
-margin-bottom:15px;
+border-radius:20px;line-height:2;
 
 }
 
-.names{
+.owner{color:#fff1a3;font-weight:bold}
 
-max-width:600px;
-
-margin:auto;
-
-background:rgba(255,255,255,.18);
-
-padding:13px;
-
-border-radius:20px;
-
-line-height:2;
-
-}
-
-.owner{
-
-font-weight:bold;
-
-color:#fff3a6;
-
-}
-
-.container{
-
-max-width:950px;
-
-margin:auto;
-
-padding:20px;
-
-}
+main{max-width:1050px;margin:auto;padding:16px}
 
 .card{
 
-background:white;
+background:#fff;border-radius:24px;padding:20px;margin:17px 0;
 
-border-radius:24px;
-
-padding:20px;
-
-margin:18px 0;
-
-box-shadow:0 5px 15px #0001;
+box-shadow:0 7px 25px #4d3b7114;
 
 }
 
-.center{text-align:center}
+.center{text-align:center}.hide{display:none!important}
+
+.quote{font-size:18px;line-height:2;color:#665e78}
 
 select{
 
-width:100%;
+width:100%;max-width:650px;padding:15px;border:2px solid #ddd4f2;
 
-padding:14px;
-
-font-size:17px;
-
-border-radius:15px;
-
-border:2px solid #d9cef4;
-
-background:white;
-
-}
-
-.stats{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:10px;
-
-margin-top:15px;
-
-}
-
-.stat{
-
-background:#f7f3ff;
-
-padding:13px 5px;
-
-border-radius:16px;
-
-text-align:center;
-
-}
-
-.number{
-
-display:block;
-
-font-size:26px;
-
-font-weight:bold;
-
-color:#7254bf;
-
-}
-
-.stories{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:15px;
-
-}
-
-.story{
-
-background:linear-gradient(135deg,#fff7d9,#eefcff);
-
-padding:18px;
-
-border-radius:20px;
-
-text-align:center;
-
-}
-
-.icon{font-size:48px}
-
-.storyText{
-
-display:none;
-
-background:white;
-
-padding:15px;
-
-margin-top:12px;
-
-border-radius:15px;
-
-text-align:right;
-
-line-height:2;
+border-radius:15px;font-size:17px;background:#fff;
 
 }
 
 button{
 
-border:0;
+border:0;border-radius:14px;padding:12px 17px;margin:5px;
 
-border-radius:14px;
-
-padding:12px 16px;
-
-font-size:16px;
-
-font-weight:bold;
-
-background:#7254bf;
-
-color:white;
+font-size:16px;font-weight:bold;color:#fff;background:var(--p);
 
 cursor:pointer;
 
-margin:5px;
+}
+
+.blue{background:var(--b)}.green{background:var(--green)}
+
+.gold{background:#e4aa25;color:#332600}
+
+.stats{
+
+display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:15px
 
 }
 
-.correct{background:#42a76c}
+.stat{text-align:center;padding:14px 5px;border-radius:17px;background:#f7f3ff}
 
-.teacherBox{
+.num{display:block;font-size:24px;font-weight:bold;color:var(--p)}
 
-background:#fff8dc;
+.bar{height:16px;background:#eeeaf5;border-radius:20px;overflow:hidden}
 
-border:2px dashed #e4bd52;
+.fill{
+
+height:100%;width:0;background:linear-gradient(90deg,#48a9df,#7055c7,#f0bd45);
+
+transition:.5s
 
 }
+
+.challenge{
+
+background:linear-gradient(135deg,#fff4c8,#fff,#edfaff);
+
+border:2px dashed #e2b647
+
+}
+
+.badges{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+
+.badge{padding:10px 13px;border-radius:30px;background:#f5f1ff}
+
+.lock{opacity:.3;filter:grayscale(1)}
+
+.stories{
+
+display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px
+
+}
+
+.story{
+
+border:1px solid #eee7f7;border-radius:22px;padding:18px;text-align:center;
+
+background:linear-gradient(145deg,#fff,#fbf9ff)
+
+}
+
+.icon{font-size:49px}.pill{
+
+display:inline-block;padding:5px 10px;background:#fff1c4;border-radius:30px;font-size:12px
+
+}
+
+.reader{
+
+font-size:19px;line-height:2.3;text-align:right;white-space:pre-line;
+
+background:#fffdf7;border:1px solid #efe6d5;border-radius:18px;padding:20px
+
+}
+
+.question{padding:15px;margin:12px 0;background:#f8f5ff;border-radius:17px}
+
+.question label{
+
+display:block;padding:10px;margin:7px 0;background:#fff;border-radius:10px
+
+}
+
+.notice{padding:15px;background:#eaf8ef;border-radius:15px;line-height:1.8;margin-top:15px}
+
+.error{background:#fff0ef}
+
+.teacher{border:2px dashed #dfb348;background:#fff9e1}
+
+table{width:100%;border-collapse:collapse;font-size:14px}
+
+th,td{padding:10px;border-bottom:1px solid #eee;text-align:right}
+
+th{background:#f5f1ff}
 
 footer{
 
-text-align:center;
+text-align:center;background:#493d69;color:#fff;padding:27px 12px;
 
-background:#4e4071;
-
-color:white;
-
-padding:25px 15px;
-
-line-height:2;
-
-margin-top:25px;
+line-height:2;margin-top:25px
 
 }
 
-@media(max-width:600px){
+@media(max-width:650px){
 
-h1{font-size:27px}
+h1{font-size:29px}.stats{grid-template-columns:1fr 1fr}
 
-.stats{grid-template-columns:1fr 1fr 1fr}
-
-.logo{width:105px;height:105px}
+.card{padding:15px}.reader{font-size:18px;padding:15px}
 
 }
 
@@ -288,89 +210,107 @@ h1{font-size:27px}
 
 <h1>📚 اقرأ وانطلق 🚀</h1>
 
-<div class="subtitle">
+<div class="tag">هُنا تَبْدَأُ رِحْلَةُ القارِئِ المُبْدِع 🌟 | الصف ٤/٤</div>
 
-منصة القراءة التفاعلية لطلبة الصف ٤/٤
+<div class="admin">
 
-</div>
+<div>👑 مديرة المدرسة: <b>أ. ابتسام البلوشي</b></div>
 
-<div class="names">
+<div>⭐ المعلمة الأولى: <b>ميمونة البلوشي</b></div>
 
-<div>👑 مديرة المدرسة: <strong>أ. ابتسام البلوشي</strong></div>
-
-<div>⭐ المعلمة الأولى: <strong>ميمونة البلوشي</strong></div>
-
-<div class="owner">
-
-🌷 إعداد وإشراف الأستاذة: محفوظة السعدي
-
-</div>
+<div class="owner">🌷 إعداد وإشراف الأستاذة: محفوظة السعدي</div>
 
 </div>
 
 </header>
 
-<div class="container">
+<main>
 
 <div class="card center">
 
-<h2>🌟 أهلًا ببطل القراءة 🌟</h2>
+<div class="quote">
 
-<p>
+❝ نقرأ اليوم… لنصنع قارئًا يفكّر، ويبدع، وينطلق نحو المستقبل. ❞
 
-اختر اسمك، واقرأ النصوص، وأجب عن الأسئلة، واجمع النجوم.
+</div>
 
-</p>
+</div>
 
-<select id="student">
+<section id="login" class="card center">
 
-<option value="">👤 اختر اسمك</option>
+<h2>🌟 بوابة أبطال القراءة</h2>
 
-<option>الطالب ١</option>
+<p>اختر اسمك، ثم انطلق في رحلتك القرائية.</p>
 
-<option>الطالب ٢</option>
+<select id="student"></select>
 
-<option>الطالب ٣</option>
+<br><br>
 
-<option>الطالب ٤</option>
+<button onclick="enter()">🚀 ابدأ رحلتي</button>
 
-<option>الطالب ٥</option>
+</section>
 
-</select>
+<section id="app" class="hide">
+
+<div class="card">
+
+<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+
+<div>
+
+<h2 id="welcome"></h2>
+
+<div>📚 اقرأ • 🧠 فكّر • ⭐ اجمع • 🏆 تميّز</div>
+
+</div>
+
+<button class="blue" onclick="logout()">👤 تغيير الاسم</button>
+
+</div>
 
 <div class="stats">
 
-<div class="stat">
+<div class="stat"><span class="num" id="points">0</span>⭐ نقاطي</div>
 
-<span class="number" id="points">0</span>
+<div class="stat"><span class="num" id="done">0</span>📖 إنجازاتي</div>
 
-⭐ نقاطي
+<div class="stat"><span class="num" id="level">🌱</span>🏅 مستواي</div>
 
-</div>
-
-<div class="stat">
-
-<span class="number" id="finished">0</span>
-
-📖 إنجازاتي
+<div class="stat"><span class="num" id="percent">0%</span>🚀 تقدمي</div>
 
 </div>
 
-<div class="stat">
+<h3>🚀 مسار رحلتي القرائية</h3>
 
-<span class="number" id="level">🌱</span>
-
-مستواي
+<div class="bar"><div class="fill" id="progress"></div></div>
 
 </div>
 
+<div class="card challenge center">
+
+<h2>🔥 تحدي القراءة</h2>
+
+<p>أكمل <b>3 قصص</b> لتحصل على وسام <b>القارئ المبدع 🥇</b></p>
+
+<div id="challenge"></div>
+
 </div>
 
-<p id="message">
+<div class="card">
 
-اختر اسمك وابدأ رحلة القراءة 🚀
+<h2 class="center">🎖️ خزانة أوسمتي</h2>
 
-</p>
+<div class="badges">
+
+<div class="badge">🌱 بداية موفقة</div>
+
+<div id="b2" class="badge lock">⭐ قارئ مجتهد</div>
+
+<div id="b3" class="badge lock">🥇 قارئ مبدع</div>
+
+<div id="b4" class="badge lock">🏆 بطل اقرأ وانطلق</div>
+
+</div>
 
 </div>
 
@@ -378,289 +318,419 @@ h1{font-size:27px}
 
 <h2 class="center">📚 مكتبة اقرأ وانطلق</h2>
 
-<div class="stories">
+<p class="center">اختر مغامرتك، اقرأ بتأنٍّ، ثم واجه تحدي الفهم 🧠</p>
 
-<div class="story">
-
-<div class="icon">🌳</div>
-
-<h3>الشجرة الكريمة</h3>
-
-<p>قصة عن العطاء والمحافظة على البيئة.</p>
-
-<button onclick="openStory('s1')">
-
-اقرأ القصة 📖
-
-</button>
-
-<div class="storyText" id="s1">
-
-<p>
-
-زرع سالم شجرة صغيرة أمام منزله، وكان يسقيها كل صباح.
-
-مرت الأيام وكبرت الشجرة، فصار الناس يستظلون بظلها،
-
-وتقف الطيور على أغصانها.
-
-فرح سالم وقال: من يزرع الخير يحصد الخير.
-
-</p>
-
-<p><strong>لماذا كان سالم يسقي الشجرة؟</strong></p>
-
-<button class="correct"
-
-onclick="answer('الشجرة الكريمة',10)">
-
-لكي تنمو 🌱
-
-</button>
-
-<button onclick="wrong()">
-
-لكي تذبل
-
-</button>
+<div class="stories" id="stories"></div>
 
 </div>
 
-</div>
+<div class="card">
 
-<div class="story">
+<h2 class="center">🏆 منصة أبطال الصف ٤/٤</h2>
 
-<div class="icon">🤝</div>
-
-<h3>يدًا بيد</h3>
-
-<p>قصة عن التعاون ومساعدة الآخرين.</p>
-
-<button onclick="openStory('s2')">
-
-اقرأ القصة 📖
-
-</button>
-
-<div class="storyText" id="s2">
-
-<p>
-
-وجد خالد زميله يحمل مجموعة كبيرة من الكتب،
-
-فأسرع إليه وساعده.
-
-ابتسم زميله وشكره.
-
-قال خالد: بالتعاون تصبح الأعمال أسهل وأجمل.
-
-</p>
-
-<p><strong>ما القيمة التي تعلمناها من القصة؟</strong></p>
-
-<button class="correct"
-
-onclick="answer('يدًا بيد',10)">
-
-التعاون 🤝
-
-</button>
-
-<button onclick="wrong()">
-
-الكسل
-
-</button>
+<div id="board"></div>
 
 </div>
 
-</div>
+</section>
 
-<div class="story">
+<section id="reading" class="card hide">
 
-<div class="icon">🐦</div>
+<button class="blue" onclick="back()">↩ العودة للمكتبة</button>
 
-<h3>العصفور الصغير</h3>
+<h2 id="storyTitle"></h2>
 
-<p>قصة عن الرحمة والرفق.</p>
+<div id="storyMeta"></div>
 
-<button onclick="openStory('s3')">
+<div class="reader" id="storyText"></div>
 
-اقرأ القصة 📖
+<h2>🧠 تحدي الفهم والتفكير</h2>
 
-</button>
+<form id="quiz"></form>
 
-<div class="storyText" id="s3">
+<div id="result"></div>
 
-<p>
+<div class="center">
 
-رأى ماجد عصفورًا صغيرًا بجانب شجرة.
-
-اقترب منه بهدوء ووضع له قليلًا من الماء.
-
-بعد وقت قصير طار العصفور فرحًا،
-
-فشعر ماجد بالسعادة لأنه أحسن إليه.
-
-</p>
-
-<p><strong>ماذا قدم ماجد للعصفور؟</strong></p>
-
-<button class="correct"
-
-onclick="answer('العصفور الصغير',10)">
-
-الماء 💧
-
-</button>
-
-<button onclick="wrong()">
-
-كتابًا
-
-</button>
+<button class="gold" type="button" onclick="submitQuiz()">⭐ أرسل إجاباتي</button>
 
 </div>
 
-</div>
+</section>
 
-<div class="story">
+<div class="card teacher center">
 
-<div class="icon">🌊</div>
+<h2>🔐 لوحة المعلمة الذكية</h2>
 
-<h3>الشاطئ الجميل</h3>
+<p>لمتابعة رحلة الطلبة القرائية والنقاط والإنجازات.</p>
 
-<p>قصة عن المحافظة على البيئة.</p>
+<button onclick="teacherPanel()">👩🏻‍🏫 فتح لوحة المعلمة</button>
 
-<button onclick="openStory('s4')">
-
-اقرأ القصة 📖
-
-</button>
-
-<div class="storyText" id="s4">
-
-<p>
-
-ذهب راشد مع أسرته إلى الشاطئ.
-
-استمتع بمشاهدة البحر والأمواج،
-
-وقبل أن يعود جمع النفايات ووضعها في المكان المخصص لها.
-
-ابتسم والده وقال: أنت تحافظ على جمال وطنك.
-
-</p>
-
-<p><strong>ماذا فعل راشد قبل العودة؟</strong></p>
-
-<button class="correct"
-
-onclick="answer('الشاطئ الجميل',10)">
-
-جمع النفايات 🗑️
-
-</button>
-
-<button onclick="wrong()">
-
-ترك النفايات
-
-</button>
+<div id="teacherReport"></div>
 
 </div>
 
-</div>
-
-</div>
-
-</div>
-
-<div class="card teacherBox center">
-
-<h2>🔐 لوحة المعلمة</h2>
-
-<p>
-
-لمتابعة نقاط الطلبة وإنجازاتهم المسجلة على هذا الجهاز.
-
-</p>
-
-<button onclick="teacherPanel()">
-
-👩🏻‍🏫 فتح لوحة المعلمة
-
-</button>
-
-</div>
-
-</div>
+</main>
 
 <footer>
 
-🌷 <strong>إعداد وإشراف الأستاذة: محفوظة السعدي</strong>
+📚 <b>اقرأ وانطلق 🚀</b><br>
 
-<br>
+🌷 إعداد وإشراف الأستاذة: محفوظة السعدي<br>
 
-⭐ المعلمة الأولى: ميمونة البلوشي
+⭐ المعلمة الأولى: ميمونة البلوشي<br>
 
-<br>
+👑 مديرة المدرسة: أ. ابتسام البلوشي<br><br>
 
-👑 مديرة المدرسة: أ. ابتسام البلوشي
+✨ كل صفحة نقرؤها… خطوة جديدة نحو التميز.<br>
 
-<br><br>
-
-📚 اقرأ اليوم… وانطلق نحو التميز غدًا 🚀
-
-<br>
-
-© 2026 منصة اقرأ وانطلق – الصف ٤/٤
+© 2026 الصف ٤/٤
 
 </footer>
 
 <script>
 
+const students=[
+
+"أحمد بن محمد بن سيف محمد القعنوني",
+
+"إسحاق بن أيمن بن سليمان حمدان اللمكي",
+
+"الجلندى بن مسعود بن مبارك سيف المقبالي",
+
+"الفيصل بن طارق بن حمد سعيد البويقي",
+
+"بثينة بنت مانع بن حسن سعيد السعدية",
+
+"جود بنت عبدالسلام بن هديب يوسف السعدية",
+
+"حمد بن أحمد بن عبدالله علي السعدي",
+
+"حمدان بن خالد بن محمد علي المزروعي",
+
+"حمدان بن محمد بن عبدالله سالم التبعي",
+
+"رؤيا بنت محمد بن سالم هرمون الجابرية",
+
+"رويدا بنت راشد بن خليفة ناصر الغافرية",
+
+"ريام بنت عماد بن علي محمد الكلبانية",
+
+"ريفال بنت سالم بن محمد إبراهيم البلوشية",
+
+"ريم بنت غافل بن سالم حمد القعنونية",
+
+"سارة بنت أيمن بن سليمان حمدان اللمكية",
+
+"سالم بن ساعد بن سالم خميس البويقي",
+
+"سعود بن حمد بن عبدالله محمد المعمري",
+
+"سيف بن سلطان بن محمد سليم القعنوني",
+
+"شفا إشتياق حسين",
+
+"شيخة بنت سيف بن خليفة سليمان العبرية",
+
+"ضي بنت محمد بن حمد علي السعدية",
+
+"عبدالرحمن بن خالد بن ربيع بلال النوفلي",
+
+"عبدالله بن مرتضى بن عبدالله سليمان العجمي",
+
+"غالية بنت هلال بن طالب علي الغافرية",
+
+"محمد بن خميس بن عبدالنبي عبدالله",
+
+"محمود بن خليل بن ذياب يعقوب السعدي",
+
+"ميرة بنت سالم بن راشد زعل السعدية",
+
+"نوف بنت خالد بن محمد خليفة السعدية",
+
+"وليد بن خالد بن عبدالله سالم الغافري",
+
+"وهب بن أيمن بن مبارك سليمان الهاشمي",
+
+"يمنى بنت عبدالله بن راشد علي اليحمدية"
+
+];
+
+const stories=[
+
+{
+
+id:1,icon:"🏔️",
+
+title:"مُغامَرَةٌ فِي الجَبَلِ الأَخْضَرِ",
+
+level:"مُسْتَكْشِف",
+
+desc:"مغامرة عُمانية عن الاكتشاف والمسؤولية.",
+
+text:`فِي صَباحِ يَوْمٍ جَميلٍ، اسْتَيْقَظَ سالِمٌ مُبَكِّرًا، وَهُوَ يَشْعُرُ بِحَماسٍ كَبيرٍ؛ فَقَدْ وَعَدَهُ والِدُهُ أَنْ يَصْطَحِبَ الأُسْرَةَ فِي رِحْلَةٍ إِلى الجَبَلِ الأَخْضَرِ.
+
+جَهَّزَ سالِمٌ حَقيبَتَهُ، وَوَضَعَ فيها زُجاجَةَ ماءٍ، وَدَفْتَرًا صَغيرًا، وَقَلَمًا، وَمِنْظارًا أَهْداهُ إِلَيْهِ جَدُّهُ. وَقالَ لِأُمِّهِ بِفَرَحٍ: «سَأُسَجِّلُ كُلَّ شَيْءٍ جَميلٍ أَراهُ!»
+
+انْطَلَقَتِ الأُسْرَةُ، وَبَدَأَ الطَّريقُ يَرْتَفِعُ شَيْئًا فَشَيْئًا. نَظَرَ سالِمٌ مِنَ النّافِذَةِ، فَشاهَدَ الجِبالَ الشّامِخَةَ وَالقُرى الصَّغيرَةَ، وَأَخَذَ الهَواءُ يَصيرُ أَلْطَفَ وَأَبْرَدَ.
+
+وَعِنْدَما وَصَلوا، دَهِشَ سالِمٌ مِنْ جَمالِ المَكانِ. كانَتِ الأَشْجارُ تَنْتَشِرُ عَلى المُدَرَّجاتِ الجَبَلِيَّةِ، وَتَفوحُ مِنْ بَعْضِ الحَدائِقِ رائِحَةُ الوَرْدِ العَطِرَةُ.
+
+وَبَيْنَما كانَ سالِمٌ يَسيرُ مَعَ أُسْرَتِهِ، لَمَحَ شَيْئًا صَغيرًا يَلْمَعُ بَيْنَ الصُّخورِ. اقْتَرَبَ مِنْهُ بِحَذَرٍ، فَوَجَدَ قِطْعَةً مَعْدَنِيَّةً قَديمَةً عَلَيْها نُقوشٌ غَريبَةٌ.
+
+قالَ سالِمٌ: «أَبي! تَعالَ وَانْظُرْ ماذا وَجَدْتُ!»
+
+نَظَرَ الأَبُ إِلَيْها، ثُمَّ قالَ: «قَدْ تَكونُ هذِهِ القِطْعَةُ قَديمَةً، وَلَكِنْ لا يَصِحُّ أَنْ نَأْخُذَها؛ فَهِيَ جُزْءٌ مِنَ المَكانِ، وَرُبَّما تَكونُ لَها قِيمَةٌ تاريخِيَّةٌ.»
+
+فَكَّرَ سالِمٌ قَليلًا، ثُمَّ أَعادَها إِلى مَكانِها، وَسَجَّلَ مَوْقِعَها فِي دَفْتَرِهِ لِيُخْبِرَ المُخْتَصّينَ.
+
+وَفِي طَريقِ العَوْدَةِ، أَدْرَكَ سالِمٌ أَنَّ المُغامَرَةَ الحَقيقيَّةَ لا تَعْني أَنْ نَأْخُذَ كُلَّ ما نَجِدُهُ، بَلْ أَنْ نَكْتَشِفَ وَنَتَعَلَّمَ وَنَحْمي ما حَوْلَنا.`,
+
+qs:[
+
+["أَيْنَ ذَهَبَ سالِمٌ؟",["إلى الجبل الأخضر","إلى الصحراء","إلى السوق"],0],
+
+["ماذا وَجَدَ بَيْنَ الصُّخورِ؟",["كتابًا","قطعة معدنية قديمة","لعبة"],1],
+
+["لماذا أعاد القطعة؟",["لأنها ثقيلة","لأنها قد تكون ذات قيمة تاريخية","لأنها مكسورة"],1],
+
+["ما الصفة التي ظهرت في تصرف سالم؟",["المسؤولية","الكسل","الإهمال"],0]
+
+]
+
+},
+
+{
+
+id:2,icon:"🔐",
+
+title:"سِرُّ الصُّنْدوقِ القَديمِ",
+
+level:"مُحَقِّق",
+
+desc:"لغز صغير يقود إلى كنز لا يُشترى بالمال.",
+
+text:`فِي عُطْلَةِ نِهايَةِ الأُسْبوعِ، ذَهَبَ راشِدٌ مَعَ والِدِهِ إِلى بَيْتِ جَدِّهِ القَديمِ. وَبَيْنَما كانَ يُساعِدُهُما فِي تَرْتيبِ المَخْزَنِ، وَجَدَ صُنْدوقًا خَشَبِيًّا صَغيرًا تَغَطّيهِ طَبَقَةٌ مِنَ الغُبارِ.
+
+لَمْ يَفْتَحْ راشِدٌ الصُّنْدوقَ مُباشَرَةً، بَلْ حَمَلَهُ إِلى جَدِّهِ وَسَأَلَهُ عَنْهُ. ابْتَسَمَ الجَدُّ وَقالَ: «هَذا الصُّنْدوقُ كانَ لِوالِدي، وَلَمْ أَفْتَحْهُ مُنْذُ سَنَواتٍ طَويلَةٍ.»
+
+فَتَحَ الجَدُّ الصُّنْدوقَ بِمِفْتاحٍ صَغيرٍ، فَلَمْ يَجِدْ راشِدٌ ذَهَبًا وَلا جَواهِرَ، بَلْ وَجَدَ رَسائِلَ قَديمَةً، وَصُوَرًا، وَدَفْتَرًا كُتِبَتْ فيهِ حِكاياتٌ عَنِ الأُسْرَةِ.
+
+جَلَسَ راشِدٌ إِلى جانِبِ جَدِّهِ يَسْتَمِعُ إِلى القِصَصِ. وَمَعَ كُلِّ صَفْحَةٍ، كانَ يَتَعَرَّفُ إِلى حَياةِ أَجْدادِهِ وَأَعْمالِهِمْ وَمَواقِفِهِمْ.
+
+قالَ راشِدٌ: «كُنْتُ أَظُنُّ أَنَّ الكَنْزَ يَجِبُ أَنْ يَكونَ ذَهَبًا!»
+
+فَقالَ الجَدُّ: «بَعْضُ الكُنوزِ لا تُشْتَرى بِالمالِ؛ فَالذِّكْرَياتُ وَالمَعْرِفَةُ وَتاريخُ الأُسْرَةِ كُنوزٌ أَيْضًا.»
+
+مُنْذُ ذلِكَ اليَوْمِ، بَدَأَ راشِدٌ يَكْتُبُ مَواقِفَ جَميلَةً مِنْ حَياتِهِ، لِيَتْرُكَ لِمَنْ يَأْتي بَعْدَهُ صُنْدوقًا آخَرَ مِنَ الذِّكْرَياتِ.`,
+
+qs:[
+
+["أين وجد راشد الصندوق؟",["في المخزن","في المدرسة","في الحديقة"],0],
+
+["ماذا وجد داخله؟",["ذهبًا","رسائل وصورًا ودفترًا","ألعابًا"],1],
+
+["ما المقصود بالكنز في القصة؟",["المال فقط","الذكريات والمعرفة والتاريخ","الصندوق فقط"],1],
+
+["لماذا بدأ راشد الكتابة؟",["ليحفظ ذكرياته","لينسى الماضي","لأنه أضاع الدفتر"],0]
+
+]
+
+},
+
+{
+
+id:3,icon:"🌊",
+
+title:"رِحْلَةٌ إِلى عالَمِ البَحْرِ",
+
+level:"عالِم",
+
+desc:"رحلة علمية تكشف مسؤوليتنا تجاه البيئة البحرية.",
+
+text:`كانَ ناصِرٌ يُحِبُّ البَحْرَ مُنْذُ صِغَرِهِ، وَكانَ يَقْضي وَقْتًا في قِراءَةِ الكُتُبِ عَنِ الأَسْماكِ وَالسَّلاحِفِ وَالشِّعابِ المَرْجانِيَّةِ.
+
+وَفِي يَوْمٍ مِنَ الأَيّامِ، زارَ مَعَ أُسْرَتِهِ مَرْكَزًا بَحْرِيًّا تَعْليمِيًّا. شاهَدَ مِنْ خِلالِ الزُّجاجِ أَسْماكًا مُلَوَّنَةً تَتَحَرَّكُ بَيْنَ الشِّعابِ، وَسَلاحِفَ تَسْبَحُ بِهُدوءٍ.
+
+شَرَحَ المُرْشِدُ أَنَّ البَحْرَ بَيْتٌ لِآلافِ الكائِناتِ، وَأَنَّ قِطْعَةً واحِدَةً مِنَ البِلاسْتيكِ قَدْ تُؤْذي حَيَوانًا بَحْرِيًّا.
+
+تَذَكَّرَ ناصِرٌ أَنَّهُ شاهَدَ ذاتَ مَرَّةٍ كيسًا بِلاسْتيكِيًّا عَلى الشّاطِئِ وَلَمْ يَرْفَعْهُ. فَشَعَرَ أَنَّهُ كانَ يَسْتَطيعُ أَنْ يَفْعَلَ شَيْئًا أَفْضَلَ.
+
+وَعِنْدَ خُروجِهِ قالَ لِوالِدِهِ: «في زِيارَتِنا القادِمَةِ إِلى الشّاطِئِ، سَأُساعِدُ في جَمْعِ النُّفاياتِ وَوَضْعِها في المَكانِ المُخَصَّصِ.»
+
+ابْتَسَمَ والِدُهُ وَقالَ: «المَعْرِفَةُ الحَقيقيَّةُ هِيَ الَّتي تُغَيِّرُ سُلوكَنا إِلى الأَفْضَلِ.»
+
+عادَ ناصِرٌ وَهُوَ يَعْرِفُ أَنَّ حِمايَةَ البَحْرِ لا تَحْتاجُ دَائِمًا إِلى أَعْمالٍ كَبيرَةٍ؛ فَقَدْ تَبْدَأُ بِتَصَرُّفٍ صَغيرٍ وَواعٍ.`,
+
+qs:[
+
+["ماذا يحب ناصر؟",["البحر","الصحراء","الطيران"],0],
+
+["ما خطر البلاستيك؟",["يؤذي الكائنات البحرية","يزيد جمال البحر","يجعل الماء أبرد"],0],
+
+["ماذا قرر ناصر؟",["المساعدة في نظافة الشاطئ","عدم زيارة البحر","ترك القراءة"],0],
+
+["ما الفكرة الرئيسة؟",["المعرفة تقود إلى السلوك المسؤول","البحر للعب فقط","النظافة غير مهمة"],0]
+
+]
+
+},
+
+{
+
+id:4,icon:"💡",
+
+title:"يَوْمٌ بِلا كَهْرَباءٍ",
+
+level:"مُفَكِّر",
+
+desc:"كيف تحولت مشكلة مفاجئة إلى أمسية لا تُنسى؟",
+
+text:`فِي مَساءٍ هادِئٍ، كانَتْ أُسْرَةُ ماجِدٍ تَسْتَعِدُّ لِقَضاءِ وَقْتِها في المَنْزِلِ، وَفَجْأَةً انْقَطَعَ التَّيّارُ الكَهْرَبائِيُّ.
+
+قالَ ماجِدٌ بِقَلَقٍ: «ماذا سَنَفْعَلُ الآنَ مِنْ دونِ التِّلْفازِ وَالأَجْهِزَةِ؟»
+
+أَحْضَرَ الأَبُ مِصْباحًا آمِنًا، وَاقْتَرَحَ أَنْ يَجْلِسوا مَعًا. بَدَأَتِ الأُمُّ تَحْكي قِصَّةً مِنْ طُفولَتِها، ثُمَّ اقْتَرَحَتِ الأُخْتُ لُعْبَةً تَعْتَمِدُ عَلى الأَلْغازِ وَالكَلِماتِ.
+
+بَعْدَ قَليلٍ، نَسِيَ ماجِدٌ أَنَّ الكَهْرَباءَ مُنْقَطِعَةٌ. ضَحِكَ مَعَ أُسْرَتِهِ، وَاسْتَمَعَ إِلى حِكاياتٍ لَمْ يَسْمَعْها مِنْ قَبْلُ.
+
+وَعِنْدَما عادَ التَّيّارُ، لَمْ يُسارِعْ أَحَدٌ إِلى تَشْغيلِ التِّلْفازِ. قالَ ماجِدٌ: «هَلْ نُكْمِلُ اللُّعْبَةَ أَوَّلًا؟»
+
+ضَحِكَ الجَميعُ، وَأَدْرَكَ ماجِدٌ أَنَّ التِّقْنِيَةَ نافِعَةٌ، وَلَكِنَّها لَيْسَتِ الطَّريقَةَ الوَحيدَةَ لِقَضاءِ وَقْتٍ جَميلٍ.`,
+
+qs:[
+
+["كيف شعر ماجد أولًا؟",["بالقلق","بالفرح","بالنعاس"],0],
+
+["ماذا فعلت الأسرة؟",["استمتعت بالحكايات والألعاب","غادرت المنزل","نام الجميع"],0],
+
+["ماذا نستنتج؟",["يمكن الاستمتاع دون الأجهزة","يجب ترك التقنية دائمًا","لا فائدة من الجلوس مع الأسرة"],0],
+
+["أي عنوان آخر يناسب القصة؟",["أمسية عائلية جميلة","الهروب من المنزل","الشاشة الجديدة"],0]
+
+]
+
+},
+
+{
+
+id:5,icon:"🔬",
+
+title:"المُخْتَرِعُ الصَّغيرُ",
+
+level:"مُبْدِع",
+
+desc:"الفشل ليس النهاية؛ بل خطوة في طريق الاكتشاف.",
+
+text:`كانَ أَحْمَدُ يُحِبُّ مُلاحَظَةَ الأَشْياءِ وَمُحاوَلَةَ فَهْمِ طَريقَةِ عَمَلِها. وَفِي مَرَّةٍ، قَرَّرَ أَنْ يَصْنَعَ نَموذَجًا صَغيرًا لِجِهازٍ يُساعِدُ عَلى التَّنْبيهِ عِنْدَ ارْتِفاعِ مُسْتَوى الماءِ في وِعاءٍ.
+
+جَمَعَ بَعْضَ الأَدَواتِ البَسيطَةِ، وَرَسَمَ فِكْرَتَهُ عَلى وَرَقَةٍ. لَمْ تَنْجَحِ التَّجْرِبَةُ الأُولى، وَسَقَطَ جُزْءٌ مِنَ النَّموذَجِ.
+
+لَمْ يَغْضَبْ أَحْمَدُ، بَلْ كَتَبَ في دَفْتَرِهِ: «المُشْكِلَةُ الأُولى: التَّثْبيتُ غَيْرُ جَيِّدٍ.»
+
+وفي التَّجْرِبَةِ الثّانِيَةِ، عَمِلَ الجِهازُ لِثَوانٍ ثُمَّ تَوَقَّفَ. فَبَحَثَ أَحْمَدُ عَنِ السَّبَبِ، وَطَلَبَ مِنْ مُعَلِّمِهِ أَنْ يُوَجِّهَهُ إِلى مَصْدَرٍ يُساعِدُهُ عَلى الفَهْمِ.
+
+بَعْدَ عِدَّةِ مُحاوَلاتٍ، نَجَحَ النَّموذَجُ. وَعِنْدَما عَرَضَهُ أَحْمَدُ أَمامَ زُمَلائِهِ قالَ: «أَكْثَرُ ما تَعَلَّمْتُهُ لَمْ يَكُنْ مِنْ نَجاحِ التَّجْرِبَةِ الأَخيرَةِ، بَلْ مِنَ المُحاوَلاتِ الَّتي لَمْ تَنْجَحْ.»
+
+فَصَفَّقَ لَهُ زُمَلاؤُهُ، وَفَهِموا أَنَّ الخَطَأَ قَدْ يَكونُ خُطْوَةً في طَريقِ الاكْتِشافِ.`,
+
+qs:[
+
+["ماذا أراد أحمد أن يصنع؟",["جهاز تنبيه","طائرة","كتابًا"],0],
+
+["ماذا فعل بعد فشل المحاولة الأولى؟",["حدد المشكلة","استسلم","رمى الأدوات"],0],
+
+["ماذا تعلم؟",["التعلم من المحاولات","ضرورة النجاح من أول مرة","عدم طلب المساعدة"],0],
+
+["أي صفة تصفه؟",["المثابرة","الكسل","الإهمال"],0]
+
+]
+
+},
+
+{
+
+id:6,icon:"🌴",
+
+title:"النَّخْلَةُ الَّتي حَكَتْ تاريخَ عُمانَ",
+
+level:"هُوِيَّة",
+
+desc:"حكاية خيالية عن الأرض والذاكرة والهوية العُمانية.",
+
+text:`جَلَسَ سُلَيْمانُ تَحْتَ نَخْلَةٍ قَديمَةٍ في مَزْرَعَةِ جَدِّهِ، وَكانَ يَنْظُرُ إِلى جِذْعِها القَوِيِّ وَسَعَفِها المُرْتَفِعِ نَحْوَ السَّماءِ.
+
+قالَ لِجَدِّهِ: «كَمْ عُمْرُ هذِهِ النَّخْلَةِ؟»
+
+ابْتَسَمَ الجَدُّ وَقالَ: «إِنَّها أَقْدَمُ مِنْكَ وَمِنّي، وَقَدْ شاهَدَتْ أَجْيالًا مِنْ أُسْرَتِنا.»
+
+أَغْمَضَ سُلَيْمانُ عَيْنَيْهِ، وَتَخَيَّلَ أَنَّ النَّخْلَةَ تَتَحَدَّثُ إِلَيْهِ. سَمِعَها في خَيالِهِ تَقولُ: «رَأَيْتُ أَجْدادَكَ يَعْمَلونَ في الأَرْضِ، وَيَتَعاوَنونَ في الحَصادِ، وَيَحْمَدونَ اللهَ عَلى النِّعَمِ.»
+
+وَتَخَيَّلَها تَحْكي لَهُ عَنِ الأَفْلاجِ الَّتي تَحْمِلُ الماءَ إِلى المَزارِعِ، وَعَنِ القُرى الَّتي تَعاوَنَ أَهْلُها لِلمُحافَظَةِ عَلى مَوارِدِهِمْ.
+
+فَتَحَ سُلَيْمانُ عَيْنَيْهِ وَقالَ: «الآنَ فَهِمْتُ لِماذا تَهْتَمُّ بِهذِهِ المَزْرَعَةِ يا جَدّي.»
+
+قالَ الجَدُّ: «نَحْنُ لا نَرِثُ الأَرْضَ فَقَطْ، بَلْ نَرِثُ مَسْؤولِيَّةَ العِنايَةِ بِها.»
+
+نَظَرَ سُلَيْمانُ إِلى النَّخْلَةِ مَرَّةً أُخْرى، وَشَعَرَ أَنَّها لَمْ تَعُدْ مُجَرَّدَ شَجَرَةٍ؛ بَلْ صارَتْ في نَظَرِهِ شاهِدًا عَلى حِكاياتِ المَكانِ وَأَهْلِهِ.`,
+
+qs:[
+
+["أين جلس سليمان؟",["تحت نخلة قديمة","في الصف","على الشاطئ"],0],
+
+["ماذا تخيل؟",["أن النخلة تتحدث","أنها تطير","أن المزرعة تختفي"],0],
+
+["ماذا قصد الجد بالمسؤولية؟",["العناية بالأرض","ترك المزرعة","بيع الأشجار"],0],
+
+["إلى ماذا ترمز النخلة؟",["تاريخ المكان وذاكرته","لعبة جديدة","السفر"],0]
+
+]
+
+}
+
+];
+
 let currentStudent="";
 
-let data=JSON.parse(localStorage.getItem("iqraData")||"{}");
+let currentStory=null;
 
-const student=document.getElementById("student");
+const select=document.getElementById("student");
 
-student.addEventListener("change",function(){
+select.innerHTML='<option value="">👤 اختر اسمك</option>'+
 
-currentStudent=this.value;
+students.map(x=>`<option>${x}</option>`).join("");
 
-if(!currentStudent){
+function data(){
 
-return;
-
-}
-
-if(!data[currentStudent]){
-
-data[currentStudent]={
-
-points:0,
-
-stories:[]
-
-};
-
-save();
+return JSON.parse(localStorage.getItem("iqra44")||"{}");
 
 }
 
-update();
+function save(d){
 
-document.getElementById("message").innerText=
+localStorage.setItem("iqra44",JSON.stringify(d));
 
-"🌟 مرحبًا "+currentStudent+"، هيا نقرأ وننطلق!";
+}
 
-});
+function profile(name){
 
-function openStory(id){
+let d=data();
 
-if(!currentStudent){
+if(!d[name]){
+
+d[name]={points:0,completed:[]};
+
+save(d);
+
+}
+
+return d[name];
+
+}
+
+function enter(){
+
+if(!select.value){
 
 alert("🌷 اختر اسمك أولًا.");
 
@@ -668,135 +738,345 @@ return;
 
 }
 
-let box=document.getElementById(id);
+currentStudent=select.value;
 
-box.style.display=
+profile(currentStudent);
 
-box.style.display==="block"?"none":"block";
+document.getElementById("login").classList.add("hide");
+
+document.getElementById("app").classList.remove("hide");
+
+render();
 
 }
 
-function answer(title,pts){
+function logout(){
 
-if(!currentStudent){
+currentStudent="";
 
-alert("اختر اسمك أولًا.");
+document.getElementById("app").classList.add("hide");
+
+document.getElementById("login").classList.remove("hide");
+
+}
+
+function level(p){
+
+if(p>=200)return "🏆 بطل";
+
+if(p>=140)return "🥇 مبدع";
+
+if(p>=80)return "🌟 متميز";
+
+if(p>=30)return "⭐ مجتهد";
+
+return "🌱 ناشئ";
+
+}
+
+function render(){
+
+let p=profile(currentStudent);
+
+document.getElementById("welcome").innerText="🌟 أهلًا "+currentStudent;
+
+document.getElementById("points").innerText=p.points;
+
+document.getElementById("done").innerText=p.completed.length;
+
+document.getElementById("level").innerText=level(p.points);
+
+let pc=Math.round(p.completed.length/stories.length*100);
+
+document.getElementById("percent").innerText=pc+"%";
+
+document.getElementById("progress").style.width=pc+"%";
+
+document.getElementById("challenge").innerHTML=
+
+p.completed.length>=3
+
+?"🎉 <b>تم التحدي! حصلت على وسام القارئ المبدع 🥇</b>"
+
+:"أنجزت <b>"+p.completed.length+"</b> من 3 قصص.";
+
+document.getElementById("b2").classList.toggle("lock",p.points<30);
+
+document.getElementById("b3").classList.toggle("lock",p.completed.length<3);
+
+document.getElementById("b4").classList.toggle("lock",p.completed.length<stories.length);
+
+document.getElementById("stories").innerHTML=stories.map(s=>{
+
+let finished=p.completed.includes(s.id);
+
+return `<div class="story">
+
+<div class="icon">${s.icon}</div>
+
+<span class="pill">${s.level}</span>
+
+<h3>${s.title}</h3>
+
+<p>${s.desc}</p>
+
+<p>${finished?"✅ أنجزت القصة":"⭐ 40 نقطة متاحة"}</p>
+
+<button onclick="openStory(${s.id})">
+
+${finished?"📖 اقرأ مرة أخرى":"🚀 ابدأ المغامرة"}
+
+</button>
+
+</div>`;
+
+}).join("");
+
+board();
+
+}
+
+function openStory(id){
+
+currentStory=stories.find(s=>s.id===id);
+
+document.getElementById("app").classList.add("hide");
+
+document.getElementById("reading").classList.remove("hide");
+
+document.getElementById("storyTitle").innerText=
+
+currentStory.icon+" "+currentStory.title;
+
+document.getElementById("storyMeta").innerHTML=
+
+'<p><span class="pill">المستوى: '+currentStory.level+
+
+'</span> <span class="pill">⭐ 10 نقاط لكل إجابة</span></p>';
+
+document.getElementById("storyText").innerText=currentStory.text;
+
+document.getElementById("result").innerHTML="";
+
+document.getElementById("quiz").innerHTML=
+
+currentStory.qs.map((q,i)=>`
+
+<div class="question">
+
+<b>${i+1}. ${q[0]}</b>
+
+${q[1].map((c,j)=>`
+
+<label>
+
+<input type="radio" name="q${i}" value="${j}"> ${c}
+
+</label>`).join("")}
+
+</div>`).join("");
+
+window.scrollTo({top:0,behavior:"smooth"});
+
+}
+
+function submitQuiz(){
+
+let answers=[];
+
+for(let i=0;i<currentStory.qs.length;i++){
+
+let a=document.querySelector(`input[name="q${i}"]:checked`);
+
+if(!a){
+
+document.getElementById("result").innerHTML=
+
+'<div class="notice error">🌷 أجب عن جميع الأسئلة أولًا.</div>';
 
 return;
 
 }
 
-if(data[currentStudent].stories.includes(title)){
-
-alert("⭐ أحسنت! لقد حصلت على نقاط هذه القصة مسبقًا.");
-
-return;
+answers.push(Number(a.value));
 
 }
 
-data[currentStudent].stories.push(title);
+let correct=0;
 
-data[currentStudent].points+=pts;
+answers.forEach((a,i)=>{
 
-save();
+if(a===currentStory.qs[i][2])correct++;
 
-update();
+});
 
-alert("👏 إجابة صحيحة! حصلت على "+pts+" نقاط ⭐");
+let earned=correct*10;
 
-}
+let d=data();
 
-function wrong(){
+let p=d[currentStudent];
 
-alert("🌷 حاول مرة أخرى، أنت تستطيع!");
+let already=p.completed.includes(currentStory.id);
 
-}
+if(!already){
 
-function update(){
+p.points+=earned;
 
-if(!currentStudent)return;
+p.completed.push(currentStory.id);
 
-let p=data[currentStudent].points;
-
-let completed=data[currentStudent].stories.length;
-
-document.getElementById("points").innerText=p;
-
-document.getElementById("finished").innerText=completed;
-
-let level="🌱";
-
-if(p>=10) level="⭐";
-
-if(p>=20) level="🌟";
-
-if(p>=40) level="🏆";
-
-document.getElementById("level").innerText=level;
+save(d);
 
 }
 
-function save(){
+let msg=
 
-localStorage.setItem("iqraData",JSON.stringify(data));
+correct===4?"🏆 مذهل! فهم قرائي رائع!":
+
+correct===3?"🌟 رائع جدًا يا قارئنا المتميز!":
+
+correct===2?"👏 جيد جدًا، أعد قراءة بعض الفقرات.":
+
+"🌱 حاول مرة أخرى، أنت تستطيع!";
+
+document.getElementById("result").innerHTML=
+
+`<div class="notice"><b>${msg}</b><br>
+
+الإجابات الصحيحة: <b>${correct} من 4</b>
+
+${already
+
+?"<br>⭐ سبق تسجيل إنجاز هذه القصة."
+
+:"<br>🎉 حصلت على <b>"+earned+" نقطة</b>."}
+
+</div>`;
+
+}
+
+function back(){
+
+document.getElementById("reading").classList.add("hide");
+
+document.getElementById("app").classList.remove("hide");
+
+render();
+
+window.scrollTo({top:0,behavior:"smooth"});
+
+}
+
+function board(){
+
+let d=data();
+
+let list=students.map(n=>({
+
+name:n,
+
+points:d[n]?.points||0,
+
+done:d[n]?.completed?.length||0
+
+}))
+
+.sort((a,b)=>b.points-a.points)
+
+.slice(0,10);
+
+document.getElementById("board").innerHTML=
+
+`<table>
+
+<tr><th>🏅</th><th>القارئ</th><th>⭐ النقاط</th><th>📚 الإنجاز</th></tr>
+
+${list.map((x,i)=>`
+
+<tr>
+
+<td>${i+1}${i===0?" 👑":i===1?" 🥈":i===2?" 🥉":""}</td>
+
+<td>${x.name}</td>
+
+<td>${x.points}</td>
+
+<td>${x.done}</td>
+
+</tr>`).join("")}
+
+</table>`;
 
 }
 
 function teacherPanel(){
 
-let password=prompt("🔐 أدخلي رمز لوحة المعلمة:");
+let pass=prompt("🔐 أدخلي رمز لوحة المعلمة:");
 
-if(password!=="4444"){
+if(pass!=="4444"){
 
-if(password!==null){
-
-alert("الرمز غير صحيح.");
-
-}
+if(pass!==null)alert("الرمز غير صحيح.");
 
 return;
 
 }
 
-let names=Object.keys(data);
+let d=data();
 
-let report="📊 تقرير طلبة الصف ٤/٤\n\n";
+let list=students.map(n=>({
 
-if(names.length===0){
+name:n,
 
-report+="لا توجد نتائج مسجلة على هذا الجهاز حتى الآن.";
+points:d[n]?.points||0,
 
-}else{
+done:d[n]?.completed?.length||0
 
-names.sort(function(a,b){
+})).sort((a,b)=>b.points-a.points);
 
-return data[b].points-data[a].points;
+let active=list.filter(x=>x.done>0).length;
 
-});
+let total=list.reduce((a,x)=>a+x.done,0);
 
-names.forEach(function(name,index){
+document.getElementById("teacherReport").innerHTML=
 
-report+=
+`<h3>📊 لوحة إنجاز الصف ٤/٤</h3>
 
-(index+1)+". "+
+<div class="stats">
 
-name+
+<div class="stat"><span class="num">${students.length}</span>👥 الطلبة</div>
 
-" ⭐ "+
+<div class="stat"><span class="num">${active}</span>🌟 النشطون</div>
 
-data[name].points+
+<div class="stat"><span class="num">${total}</span>📚 القراءات</div>
 
-" نقطة | 📖 "+
+<div class="stat"><span class="num">${list[0]?.points||0}</span>🏆 أعلى رصيد</div>
 
-data[name].stories.length+
+</div>
 
-" نصوص\n";
+<table>
 
-});
+<tr>
 
-}
+<th>#</th><th>اسم الطالب</th><th>النقاط</th><th>القصص</th><th>المستوى</th>
 
-alert(report);
+</tr>
+
+${list.map((x,i)=>`
+
+<tr>
+
+<td>${i+1}</td>
+
+<td>${x.name}</td>
+
+<td>⭐ ${x.points}</td>
+
+<td>${x.done}</td>
+
+<td>${level(x.points)}</td>
+
+</tr>`).join("")}
+
+</table>`;
 
 }
 
