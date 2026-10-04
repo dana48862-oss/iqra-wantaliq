@@ -198,6 +198,22 @@ h1{font-size:29px}.stats{grid-template-columns:1fr 1fr}
 
 }
 
+
+/* ===== جولة الإدارة + مهارات التفكير العليا ===== */
+.admin-tour{
+  background:linear-gradient(135deg,#fff8dc,#fff,#f4efff);
+  border:2px solid #e4bd55;
+}
+.skillchips{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin:10px 0}
+.skillchip{display:inline-block;padding:7px 10px;border-radius:20px;background:#eee8ff;font-size:12px;font-weight:bold}
+.hots{margin-top:20px;padding:18px;border-radius:20px;background:linear-gradient(135deg,#f5f0ff,#fff9df);border:2px dashed #8b70d1}
+.hots h3{margin-top:0;color:#5a43a0}
+.thinkq{padding:13px;margin:10px 0;background:#fff;border-radius:14px;line-height:1.9;text-align:right}
+.admin-banner{padding:15px;border-radius:18px;background:linear-gradient(135deg,#6950bd,#45a9df);color:#fff;margin-bottom:15px}
+.admin-story{border:1px solid #eee7f7;border-radius:20px;padding:17px;margin:13px 0;background:#fff;text-align:right}
+.admin-story summary{cursor:pointer;font-size:18px;font-weight:bold;color:#58469b}
+.admin-story[open] summary{margin-bottom:12px}
+
 </style>
 
 </head>
@@ -356,6 +372,14 @@ h1{font-size:29px}.stats{grid-template-columns:1fr 1fr}
 
 </div>
 
+</section>
+
+
+<section id="adminTour" class="card admin-tour center">
+  <h2>👑 جولة الإدارة في منصة اقرأ وانطلق</h2>
+  <p>جولة خاصة لمديرة المدرسة والمعلمة الأولى للاطلاع على القصص ومهارات الفهم والتفكير العليا دون التأثير في نقاط الطلبة.</p>
+  <button class="gold" onclick="openAdminTour()">👑 ابدئي جولة الإدارة</button>
+  <div id="adminLibrary" class="hide"></div>
 </section>
 
 <div class="card teacher center">
@@ -690,6 +714,91 @@ qs:[
 
 ];
 
+
+const higherThinking={
+1:[
+"🔎 الاستنتاج: ما الدليل من القصة على أن سالم كان قارئًا واعيًا ومسؤولًا في تصرفه؟",
+"⚖️ التقويم: هل كان قرار سالم بإعادة القطعة إلى مكانها هو القرار الأفضل؟ علّل رأيك.",
+"💡 الإبداع: اقترح تصرفًا آخر يمكن أن يقوم به سالم لحماية القطعة والمحافظة على الموقع.",
+"🔮 التنبؤ: ماذا قد يحدث لو أخذ كل زائر شيئًا قديمًا يجده في المكان؟"
+],
+2:[
+"🧠 التحليل: لماذا تغيّر مفهوم «الكنز» لدى راشد في نهاية القصة؟",
+"⚖️ التقويم: أيهما أثمن في رأيك: الأشياء المادية أم الذكريات والمعرفة؟ فسّر إجابتك.",
+"🔗 الربط: كيف يمكن أن يحافظ الطالب على تاريخ أسرته بطريقة مناسبة لعصرنا؟",
+"✨ الإبداع: لو أضفت شيئًا إلى صندوق راشد ليقرأه أحفاده مستقبلًا، فماذا ستضيف؟ ولماذا؟"
+],
+3:[
+"🔎 الاستنتاج: ماذا نستنتج من قول الأب: «المعرفة الحقيقية هي التي تغيّر سلوكنا إلى الأفضل»؟",
+"🧩 حل المشكلات: اقترح ثلاث خطوات يستطيع طلبة المدرسة تنفيذها لحماية البيئة البحرية.",
+"⚖️ التقويم: هل يكفي أن نعرف أضرار التلوث دون أن نغيّر سلوكنا؟ علّل.",
+"🔮 التنبؤ: كيف سيكون حال البحر بعد سنوات إذا استمر الناس في رمي البلاستيك؟"
+],
+4:[
+"🧠 التحليل: كيف تحولت مشكلة انقطاع الكهرباء إلى فرصة جميلة للأسرة؟",
+"⚖️ التقويم: هل التقنية هي أفضل وسيلة دائمًا لقضاء وقت الفراغ؟ ادعم رأيك بسببين.",
+"💡 الإبداع: ابتكر نشاطًا عائليًا يمكن تنفيذه من دون أجهزة إلكترونية.",
+"🔗 الربط: ما الدرس الذي يمكن أن تطبقه في حياتك اليومية من هذه القصة؟"
+],
+5:[
+"🔎 الاستنتاج: ما الذي يدل على أن أحمد كان يتعلم من أخطائه بدل أن يخاف منها؟",
+"🧩 حل المشكلات: لو فشل النموذج مرة أخرى، فما الخطوات التي تقترحها على أحمد؟",
+"⚖️ التقويم: أيهما أهم للمخترع: الذكاء أم المثابرة؟ وضّح رأيك.",
+"✨ الإبداع: اقترح اختراعًا بسيطًا يحل مشكلة في المدرسة، واشرح فكرته."
+],
+6:[
+"🧠 التحليل: لماذا أصبحت النخلة في نظر سليمان أكثر من مجرد شجرة؟",
+"🔎 الاستنتاج: ما العلاقة بين المحافظة على الأرض والمحافظة على الهوية العُمانية؟",
+"⚖️ التقويم: ما مسؤولية الجيل الجديد تجاه ما ورثه من الأجداد؟ علّل.",
+"✨ الإبداع: لو استطاعت النخلة أن تكتب رسالة لطلبة الصف الرابع، فماذا تتوقع أن تقول؟"
+]
+};
+
+function skillsFor(id){
+ const sets={
+  1:["🔎 الاستنتاج","⚖️ التقويم","💡 الإبداع","🔮 التنبؤ"],
+  2:["🧠 التحليل","⚖️ التقويم","🔗 الربط","✨ الإبداع"],
+  3:["🔎 الاستنتاج","🧩 حل المشكلات","⚖️ التقويم","🔮 التنبؤ"],
+  4:["🧠 التحليل","⚖️ التقويم","💡 الإبداع","🔗 الربط"],
+  5:["🔎 الاستنتاج","🧩 حل المشكلات","⚖️ التقويم","✨ الإبداع"],
+  6:["🧠 التحليل","🔎 الاستنتاج","⚖️ التقويم","✨ الإبداع"]
+ };
+ return sets[id]||[];
+}
+
+function higherBlock(id){
+ return `<div class="hots">
+   <h3>🧠 تحدي العقول المبدعة | مهارات القدرات العليا</h3>
+   <div class="skillchips">${skillsFor(id).map(x=>`<span class="skillchip">${x}</span>`).join("")}</div>
+   <p>فكّر بعمق، واستدل من النص، وعبّر عن رأيك بجملة واضحة.</p>
+   ${(higherThinking[id]||[]).map((q,i)=>`<div class="thinkq"><b>${i+1}. ${q}</b></div>`).join("")}
+ </div>`;
+}
+
+function openAdminTour(){
+ const box=document.getElementById("adminLibrary");
+ box.classList.remove("hide");
+ box.innerHTML=`<div class="admin-banner">
+   <h3>🌟 أهلًا بكم في جولة الإدارة</h3>
+   <div>👑 أ. ابتسام البلوشي &nbsp; | &nbsp; ⭐ ميمونة البلوشي</div>
+   <p>يمكن الاطلاع على جميع القصص وأسئلة الفهم ومهارات التفكير العليا، دون تسجيل أي نقاط للطلبة.</p>
+ </div>
+ <div class="skillchips">
+  <span class="skillchip">🔎 استنتاج</span><span class="skillchip">🧠 تحليل</span>
+  <span class="skillchip">⚖️ تقويم</span><span class="skillchip">🧩 حل المشكلات</span>
+  <span class="skillchip">🔮 تنبؤ</span><span class="skillchip">✨ إبداع</span>
+ </div>
+ ${stories.map(s=>`<details class="admin-story">
+   <summary>${s.icon} ${s.title} — ${s.level}</summary>
+   <p><b>🎯 وصف القصة:</b> ${s.desc}</p>
+   <div class="reader">${s.text}</div>
+   <h3>📝 أسئلة الفهم</h3>
+   ${s.qs.map((q,i)=>`<div class="question"><b>${i+1}. ${q[0]}</b><br>${q[1].map((a,j)=>`${j===q[2]?"✅":"▫️"} ${a}`).join(" &nbsp; ")}</div>`).join("")}
+   ${higherBlock(s.id)}
+ </details>`).join("")}`;
+ box.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
 let currentStudent="";
 
 let currentStory=null;
@@ -856,7 +965,7 @@ document.getElementById("storyMeta").innerHTML=
 
 document.getElementById("storyText").innerText=currentStory.text;
 
-document.getElementById("result").innerHTML="";
+document.getElementById("result").innerHTML=higherBlock(currentStory.id);
 
 document.getElementById("quiz").innerHTML=
 
